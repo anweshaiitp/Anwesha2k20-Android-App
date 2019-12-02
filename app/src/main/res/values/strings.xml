@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Anwesha2k20</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="default_notification_channel_id">notifications</string>
+    <string name="default_notification_channel_description">All the notifications are sent through this channel.</string>
+
+    <string name="celesta_app">https://celesta.org.in/app/</string>
+
+</resources>
