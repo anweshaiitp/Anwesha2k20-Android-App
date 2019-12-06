@@ -27,7 +27,7 @@
             android:layout_marginTop="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginBottom="8dp"
-            android:hint="Celesta ID"
+            android:hint="Anwesha ID"
             android:textColorHint="@color/white">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -36,7 +36,7 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="text"
-                android:text="CLST"
+                android:text="ANW"
                 android:textAllCaps="true"
                 android:maxLines="1"
                 android:textColor="@color/white"
