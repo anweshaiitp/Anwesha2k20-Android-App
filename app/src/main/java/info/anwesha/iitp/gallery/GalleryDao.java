@@ -6,7 +6,6 @@ import androidx.room.Query;
 
 import java.util.List;
 
-import info.anwesha.iitp.gallery.Image;
 
 import static androidx.room.OnConflictStrategy.REPLACE;
 

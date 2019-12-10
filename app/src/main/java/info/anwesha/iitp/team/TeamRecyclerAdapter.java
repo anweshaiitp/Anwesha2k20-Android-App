@@ -18,7 +18,6 @@ import com.bumptech.glide.Glide;
 import java.util.List;
 
 import info.anwesha.iitp.R;
-import info.anwesha.iitp.team.TeamItem;
 import info.anwesha.iitp.utils.IntentUtils;
 
 public class TeamRecyclerAdapter extends RecyclerView.Adapter<info.anwesha.iitp.team.TeamRecyclerAdapter.ViewHolder> {
