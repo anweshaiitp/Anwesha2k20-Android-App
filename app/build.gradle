@@ -1,3 +1,6 @@
+plugins {
+    id("com.diffplug.gradle.spotless") version "3.26.1"
+}
 apply plugin: 'com.android.application'
 apply plugin: 'com.google.gms.google-services'
 
@@ -29,6 +32,13 @@ android {
     compileOptions {
         sourceCompatibility = 1.8
         targetCompatibility = 1.8
+    }
+}
+
+spotless {
+    java {
+        target '**/*.java'
+        removeUnusedImports()
     }
 }
 
