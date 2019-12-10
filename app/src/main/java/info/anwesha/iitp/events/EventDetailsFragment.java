@@ -35,8 +35,6 @@ import java.util.List;
 import info.anwesha.iitp.Auth.LoginRegisterActivity;
 import info.anwesha.iitp.Auth.LogoutResponse;
 import info.anwesha.iitp.R;
-import info.anwesha.iitp.events.EventItem;
-import info.anwesha.iitp.events.EventsViewModel;
 import info.anwesha.iitp.network.EventsRoutes;
 import info.anwesha.iitp.network.RetrofitClientInstance;
 import info.anwesha.iitp.utils.ImageViewerActivity;

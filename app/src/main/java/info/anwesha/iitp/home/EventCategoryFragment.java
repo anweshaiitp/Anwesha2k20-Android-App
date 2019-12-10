@@ -25,7 +25,6 @@ import java.util.List;
 import info.anwesha.iitp.R;
 import info.anwesha.iitp.events.EventItem;
 import info.anwesha.iitp.events.EventsViewModel;
-import info.anwesha.iitp.home.EventsCategoryAdapter;
 import info.anwesha.iitp.network.EventsRoutes;
 import info.anwesha.iitp.network.RetrofitClientInstance;
 import retrofit2.Call;

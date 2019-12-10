@@ -13,8 +13,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import info.anwesha.iitp.R;
-import info.anwesha.iitp.sponsors.SponsorItem;
-import info.anwesha.iitp.sponsors.SponsorsAdapter;
 
 public class SponsorsFragment extends Fragment {
 

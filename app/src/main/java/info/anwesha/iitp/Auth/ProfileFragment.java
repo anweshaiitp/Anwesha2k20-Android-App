@@ -35,11 +35,6 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
-import info.anwesha.iitp.Auth.AuthApi;
-import info.anwesha.iitp.Auth.LogoutResponse;
-import info.anwesha.iitp.Auth.ProfileResponse;
-import info.anwesha.iitp.Auth.RegisteredEventItem;
-import info.anwesha.iitp.Auth.RegisteredEventsAdapter;
 import info.anwesha.iitp.R;
 import info.anwesha.iitp.network.RetrofitClientInstance;
 import info.anwesha.iitp.utils.CheckNetwork;
