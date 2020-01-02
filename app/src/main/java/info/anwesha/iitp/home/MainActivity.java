@@ -153,7 +153,7 @@ public class MainActivity extends AppCompatActivity implements EventsRecyclerAda
 
         if (v != null) {
             String name = prefs.getString("first_name", "");
-            ((TextView) v.findViewById(R.id.name)).setText(name.isEmpty() ? "Celesta IITP" : name);
+            ((TextView) v.findViewById(R.id.name)).setText(name.isEmpty() ? "Anwesha IITP" : name);
             String id = prefs.getString("celesta_id", "");
             ((TextView) v.findViewById(R.id.celesta_id)).setText(id.isEmpty() ? "Guest User" : id);
             ImageView profileImage = v.findViewById(R.id.image);

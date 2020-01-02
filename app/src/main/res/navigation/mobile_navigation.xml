@@ -96,4 +96,9 @@
         app:action="android.intent.action.VIEW"
         app:data="https://www.youtube.com/watch?v=0zq9wqsYZCw" />
 
+    <activity
+        android:id="@+id/afterMovie"
+        app:action="android.intent.action.VIEW"
+        app:data="https://www.youtube.com/watch?v=tare6Drw0Ng" />
+
 </navigation>

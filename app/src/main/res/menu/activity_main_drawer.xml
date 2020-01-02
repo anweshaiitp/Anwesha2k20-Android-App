@@ -13,6 +13,12 @@
             android:id="@+id/nav_theme"
             android:icon="@drawable/ic_theme_black_24dp"
             android:title="Theme" />
+
+        <item
+            android:id="@+id/afterMovie"
+            android:icon="@drawable/ic_aftermovie"
+            android:title="After Movie"/>
+
         <item
             android:id="@+id/nav_events_cat"
             android:icon="@drawable/events_icon_2"
