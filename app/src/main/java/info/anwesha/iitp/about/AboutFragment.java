@@ -91,7 +91,6 @@ public class AboutFragment extends Fragment implements View.OnClickListener {
         Glide.with(context).load("https://scontent.fdel29-1.fna.fbcdn.net/v/t1.0-9/33490969_969879943175001_7316512759087104000_n.jpg?_nc_cat=105&_nc_oc=AQn_AxS6IX1lXlZZyVmn8sBqsAwQuU69Qg3VmDV65xgAmC_J9_zHJ5AkbPWEccCVU3A&_nc_ht=scontent.fdel29-1.fna&oh=871245e026dcfd1041ed75995ebe9deb&oe=5DF6A107")
                 .placeholder(R.mipmap.celesta_icon_round).into(image4);
 
-
         super.onViewCreated(view, savedInstanceState);
     }
 

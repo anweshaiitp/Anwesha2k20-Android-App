@@ -9,7 +9,10 @@
         <item name="android:navigationBarColor">@color/transparent</item>
 
     </style>
-
+    <style name="spinnerTheme">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:colorPrimaryDark">@color/white</item>
+    </style>
     <style name="AppTheme.NoActionBar" parent="AppTheme">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>

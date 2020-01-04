@@ -22,6 +22,11 @@
     </fragment>
 
     <fragment
+        android:id="@+id/nav_accomodation"
+        android:label="Book Accomodation"
+        android:name="info.anwesha.iitp.accomodation.AccomodationFragment"
+        tools:layout="@layout/fragment_accomodation"/>
+    <fragment
         android:id="@+id/nav_pronite"
         android:label="Pronite"
         android:name="info.anwesha.iitp.pronite.ProniteFragment"

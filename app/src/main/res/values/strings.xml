@@ -1,12 +1,19 @@
 <resources>
     <string name="app_name">Anwesha2k20</string>
     <string name="nav_header_desc">Navigation header</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-
     <string name="default_notification_channel_id">notifications</string>
     <string name="default_notification_channel_description">All the notifications are sent through this channel.</string>
-
     <string name="celesta_app">https://celesta.org.in/app/</string>
+    <string name="accomo_fragment">This Segment is work in progress, so text used here is irrelevant!!!     wgrwgr gwrgwrg wgrwdg grgrwgwr wrgwgwrgwr gwrgwrgrw gwrgwrgrwfwr2 t5h4th wf w4t  g34g </string>
+    <string name="book">Submit</string>
+    <string name="preference">Book your preference now!</string>
+    <string-array name="days_array">
+    <item> None</item>
+    <item> Day 1</item>
+    <item> Day 2</item>
+    <item> Day 3</item>
+    <item> Day 1 and Day 2</item>
+    <item> Day 2 and Day 3</item>
+</string-array>
 
 </resources>
