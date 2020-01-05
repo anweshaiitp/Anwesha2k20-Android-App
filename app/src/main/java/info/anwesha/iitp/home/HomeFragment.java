@@ -38,16 +38,14 @@ public class HomeFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
         ImageView imageView = view.findViewById(R.id.main_logo_iv);
-        Glide.with(requireContext()).load(R.drawable.celesta_logo_long_2).into(imageView);
+        Glide.with(requireContext()).load(R.drawable.anwesha_logo_long_2).into(imageView);
 
         Map<Integer, Integer> map = new HashMap<>();
 
         map.put(R.id.main_pronite_ll, R.id.nav_pronite);
         map.put(R.id.main_event_ll, R.id.nav_events_cat);
         map.put(R.id.main_gallery_ll, R.id.nav_gallery);
-        map.put(R.id.main_special_ll, R.id.nav_special_cat);
-        map.put(R.id.main_team_ll, R.id.nav_team);
-        map.put(R.id.main_sponsor_ll, R.id.nav_sponsors);
+        map.put(R.id.main_login_ll,R.id.nav_account);
 
         for (final Map.Entry<Integer, Integer> pair : map.entrySet()) {
             View mainView = view.findViewById(pair.getKey());

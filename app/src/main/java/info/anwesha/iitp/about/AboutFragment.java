@@ -80,16 +80,16 @@ public class AboutFragment extends Fragment implements View.OnClickListener {
         github4.setOnClickListener(this);
 
         Glide.with(context).load("https://scontent.fdel29-1.fna.fbcdn.net/v/t1.0-9/61836104_1185350021642288_3218647400700706816_n.jpg?_nc_cat=102&_nc_oc=AQks_Avrh-QmlQFcHGi2ug38TMWNY4xy6qpFT8fxfz451NDS3ahAIUOVwKIbn-O6KmE&_nc_ht=scontent.fdel29-1.fna&oh=ba5d514048981767bdc4b4c909b6708a&oe=5E35BDD7")
-                .placeholder(R.mipmap.celesta_icon_round).into(image1);
+                .placeholder(R.mipmap.anwesha_icon_round).into(image1);
 
         Glide.with(context).load("https://scontent.fdel29-1.fna.fbcdn.net/v/t1.0-9/69644261_2115104492128356_6176772960083247104_n.jpg?_nc_cat=107&_nc_oc=AQk4WEUseafFdQvhhWhu0YFH6_9o8nBkkjTU7UJPzeK0NPWeppaKVIVUMtJUAGIZ6Yk&_nc_ht=scontent.fdel29-1.fna&oh=818707c46121857a62041b44ed4bd17c&oe=5DF2FCE3")
-                .placeholder(R.mipmap.celesta_icon_round).into(image2);
+                .placeholder(R.mipmap.anwesha_icon_round).into(image2);
 
         Glide.with(context).load("https://scontent.fdel29-1.fna.fbcdn.net/v/t1.0-9/18813995_1182737558521894_2753272857627730485_n.jpg?_nc_cat=101&_nc_oc=AQlG0F8XVl3PnNTA1LnzMcfZ3p4cElt7WOpCtOADvw6N7eQcw-97L2RhxGWq-T2VDGk&_nc_ht=scontent.fdel29-1.fna&oh=70217968ca8de55d0a842ceac8ab8f41&oe=5E3796AA")
-                .placeholder(R.mipmap.celesta_icon_round).into(image3);
+                .placeholder(R.mipmap.anwesha_icon_round).into(image3);
 
         Glide.with(context).load("https://scontent.fdel29-1.fna.fbcdn.net/v/t1.0-9/33490969_969879943175001_7316512759087104000_n.jpg?_nc_cat=105&_nc_oc=AQn_AxS6IX1lXlZZyVmn8sBqsAwQuU69Qg3VmDV65xgAmC_J9_zHJ5AkbPWEccCVU3A&_nc_ht=scontent.fdel29-1.fna&oh=871245e026dcfd1041ed75995ebe9deb&oe=5DF6A107")
-                .placeholder(R.mipmap.celesta_icon_round).into(image4);
+                .placeholder(R.mipmap.anwesha_icon_round).into(image4);
 
         super.onViewCreated(view, savedInstanceState);
     }

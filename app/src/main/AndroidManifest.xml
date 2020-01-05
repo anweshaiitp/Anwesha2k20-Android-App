@@ -7,9 +7,9 @@
 
   <application
         android:allowBackup="true"
-        android:icon="@mipmap/celesta_icon_round"
+        android:icon="@mipmap/anwesha_icon_round"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/celesta_icon_round"
+        android:roundIcon="@mipmap/anwesha_icon_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"

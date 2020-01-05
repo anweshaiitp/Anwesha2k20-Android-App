@@ -160,7 +160,7 @@ public class MainActivity extends AppCompatActivity implements EventsRecyclerAda
             Glide.with(this)
                     .load(prefs.getString("qr_code", ""))
                     .centerCrop()
-                    .placeholder(R.mipmap.celesta_icon_round)
+                    .placeholder(R.mipmap.anwesha_icon_round)
                     .into(profileImage);
             profileImage.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, LoginRegisterActivity.class)));
         }

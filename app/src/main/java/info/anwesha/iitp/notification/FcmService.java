@@ -80,7 +80,7 @@ public class FcmService extends FirebaseMessagingService {
         PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_ONE_SHOT);
 
         NotificationCompat.Builder notificationBuilder = new NotificationCompat.Builder(this, getString(R.string.default_notification_channel_id))
-                .setSmallIcon(R.mipmap.celesta_icon_round)
+                .setSmallIcon(R.mipmap.anwesha_icon_round)
                 .setContentTitle(title)
                 .setContentText(body)
                 .setAutoCancel(true)
