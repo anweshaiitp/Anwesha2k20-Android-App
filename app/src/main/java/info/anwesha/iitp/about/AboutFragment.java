@@ -22,10 +22,10 @@ import info.anwesha.iitp.utils.IntentUtils;
 public class AboutFragment extends Fragment implements View.OnClickListener {
 
 
+    private Context context;
+
     public AboutFragment() {
     }
-
-    private Context context;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -47,50 +47,86 @@ public class AboutFragment extends Fragment implements View.OnClickListener {
         ImageView image2 = view.findViewById(R.id.image2);
         ImageView image3 = view.findViewById(R.id.image3);
         ImageView image4 = view.findViewById(R.id.image4);
+        ImageView image5 = view.findViewById(R.id.image5);
+        ImageView image6 = view.findViewById(R.id.image6);
+        ImageView image7 = view.findViewById(R.id.image7);
+        ImageView image8 = view.findViewById(R.id.image8);
+        ImageView image9 = view.findViewById(R.id.image9);
 
         CardView call1 = view.findViewById(R.id.card_call_1);
         CardView call2 = view.findViewById(R.id.card_call_2);
         CardView call3 = view.findViewById(R.id.card_call_3);
         CardView call4 = view.findViewById(R.id.card_call_4);
+        CardView call5 = view.findViewById(R.id.card_call_5);
+        CardView call6 = view.findViewById(R.id.card_call_6);
+        CardView call7 = view.findViewById(R.id.card_call_7);
+        CardView call8 = view.findViewById(R.id.card_call_8);
+        CardView call9 = view.findViewById(R.id.card_call_9);
 
         call1.setOnClickListener(this);
         call2.setOnClickListener(this);
         call3.setOnClickListener(this);
         call4.setOnClickListener(this);
+        call5.setOnClickListener(this);
+        call6.setOnClickListener(this);
+        call7.setOnClickListener(this);
+        call8.setOnClickListener(this);
+        call9.setOnClickListener(this);
 
         CardView facebook1 = view.findViewById(R.id.card_facebook_1);
         CardView facebook2 = view.findViewById(R.id.card_facebook_2);
         CardView facebook3 = view.findViewById(R.id.card_facebook_3);
         CardView facebook4 = view.findViewById(R.id.card_facebook_4);
+        CardView facebook7 = view.findViewById(R.id.card_facebook_7);
+        CardView facebook8 = view.findViewById(R.id.card_facebook_8);
+        CardView facebook9 = view.findViewById(R.id.card_facebook_9);
 
         facebook1.setOnClickListener(this);
         facebook2.setOnClickListener(this);
         facebook3.setOnClickListener(this);
         facebook4.setOnClickListener(this);
-
+        facebook7.setOnClickListener(this);
+        facebook8.setOnClickListener(this);
+        facebook9.setOnClickListener(this);
 
         CardView github1 = view.findViewById(R.id.card_github_1);
         CardView github2 = view.findViewById(R.id.card_github_2);
         CardView github3 = view.findViewById(R.id.card_github_3);
         CardView github4 = view.findViewById(R.id.card_github_4);
+        CardView github5 = view.findViewById(R.id.card_github_5);
+        CardView github6 = view.findViewById(R.id.card_github_6);
+        CardView github7 = view.findViewById(R.id.card_github_7);
+        CardView github8 = view.findViewById(R.id.card_github_8);
+        CardView github9 = view.findViewById(R.id.card_github_9);
 
         github1.setOnClickListener(this);
         github2.setOnClickListener(this);
         github3.setOnClickListener(this);
         github4.setOnClickListener(this);
+        github5.setOnClickListener(this);
+        github6.setOnClickListener(this);
+        github7.setOnClickListener(this);
+        github8.setOnClickListener(this);
+        github9.setOnClickListener(this);
 
         Glide.with(context).load("https://scontent.fdel29-1.fna.fbcdn.net/v/t1.0-9/61836104_1185350021642288_3218647400700706816_n.jpg?_nc_cat=102&_nc_oc=AQks_Avrh-QmlQFcHGi2ug38TMWNY4xy6qpFT8fxfz451NDS3ahAIUOVwKIbn-O6KmE&_nc_ht=scontent.fdel29-1.fna&oh=ba5d514048981767bdc4b4c909b6708a&oe=5E35BDD7")
                 .placeholder(R.mipmap.anwesha_icon_round).into(image1);
 
-        Glide.with(context).load("https://scontent.fdel29-1.fna.fbcdn.net/v/t1.0-9/69644261_2115104492128356_6176772960083247104_n.jpg?_nc_cat=107&_nc_oc=AQk4WEUseafFdQvhhWhu0YFH6_9o8nBkkjTU7UJPzeK0NPWeppaKVIVUMtJUAGIZ6Yk&_nc_ht=scontent.fdel29-1.fna&oh=818707c46121857a62041b44ed4bd17c&oe=5DF2FCE3")
+        Glide.with(context).load("https://scontent.fpat1-1.fna.fbcdn.net/v/t1.0-9/p960x960/81445064_2210647695907368_5005389852087156736_o.jpg?_nc_cat=102&_nc_ohc=Lph1sLQZf4cAQlaU9t4HrKLfnlufTTAbATMgGozV5_ffd5FqeBI1cr_jg&_nc_ht=scontent.fpat1-1.fna&oh=22884030cdb2cd9d39accd26e6c5307d&oe=5EA9F98C")
                 .placeholder(R.mipmap.anwesha_icon_round).into(image2);
 
         Glide.with(context).load("https://scontent.fdel29-1.fna.fbcdn.net/v/t1.0-9/18813995_1182737558521894_2753272857627730485_n.jpg?_nc_cat=101&_nc_oc=AQlG0F8XVl3PnNTA1LnzMcfZ3p4cElt7WOpCtOADvw6N7eQcw-97L2RhxGWq-T2VDGk&_nc_ht=scontent.fdel29-1.fna&oh=70217968ca8de55d0a842ceac8ab8f41&oe=5E3796AA")
                 .placeholder(R.mipmap.anwesha_icon_round).into(image3);
 
-        Glide.with(context).load("https://scontent.fdel29-1.fna.fbcdn.net/v/t1.0-9/33490969_969879943175001_7316512759087104000_n.jpg?_nc_cat=105&_nc_oc=AQn_AxS6IX1lXlZZyVmn8sBqsAwQuU69Qg3VmDV65xgAmC_J9_zHJ5AkbPWEccCVU3A&_nc_ht=scontent.fdel29-1.fna&oh=871245e026dcfd1041ed75995ebe9deb&oe=5DF6A107")
+        Glide.with(context).load("https://scontent.fpat1-1.fna.fbcdn.net/v/t1.0-1/c0.256.1536.1536a/33470507_969879939841668_5779873400172314624_o.jpg?_nc_cat=104&_nc_ohc=FlROdQlTy7EAQlwnzy_3bzj5c3WWoIE34AlyWjtddAjsGEPiR2gLHT2Ig&_nc_ht=scontent.fpat1-1.fna&oh=b2ee8ad9cd5f0b774eb4a7bbe078f838&oe=5EA5E710")
                 .placeholder(R.mipmap.anwesha_icon_round).into(image4);
 
+        Glide.with(context).load("https://scontent.fdel1-2.fna.fbcdn.net/v/t1.0-0/p480x480/78411567_2411746825744895_7288578639686270976_o.jpg?_nc_cat=104&_nc_ohc=uONelHvmo7kAQkqKqMc4pmOjkmcHJtClYmEMVjkOhzZGlLMPcr43GCORA&_nc_ht=scontent.fdel1-2.fna&oh=a960d468686b630cd3aac20322d979f0&oe=5E8158ED")
+                .placeholder(R.mipmap.anwesha_icon_round).into(image5);
+        Glide.with(context).load("https://instagram.fdel27-1.fna.fbcdn.net/vp/7fcc78773c9364271f08bbc9ae7a7a41/5E7C8575/t51.2885-19/s150x150/70891287_314435436086146_8847141092227809280_n.jpg?_nc_ht=instagram.fdel27-1.fna.fbcdn.net").placeholder(R.mipmap.anwesha_icon_round).into(image6);
+        Glide.with(context).load("https://scontent.fpat1-1.fna.fbcdn.net/v/t1.0-9/81556673_167301961289350_322462425142001664_n.jpg?_nc_cat=101&_nc_ohc=a4OckavxUEkAQnmtquIYbZATA5GKo74k5AOmbOxxlzl_Idjl6iURoGrDg&_nc_ht=scontent.fpat1-1.fna&oh=38e9c3a31824a4df0b3d284ba078fb31&oe=5E69CAD6").placeholder(R.mipmap.anwesha_icon_round).into(image7);
+        Glide.with(context).load("https://scontent.fdel1-2.fna.fbcdn.net/v/t1.0-9/cp0/e15/q65/p720x720/70253157_121698649207771_2210579453472407552_o.jpg?_nc_cat=101&efg=eyJpIjoidCJ9&_nc_ohc=34H-aQrEeN8AQnnzhF5YyAWV4m03VUw4DgCRoXzKiGZ964onzyDN-sSbQ&_nc_ht=scontent.fdel1-2.fna&oh=361bca9b62a39fe12c3a001792911247&oe=5E6ACA7C").placeholder(R.mipmap.anwesha_icon_round).into(image8);
+        Glide.with(context).load("https://scontent.fdel1-3.fna.fbcdn.net/v/t1.0-9/fr/cp0/e15/q65/72642224_121631915910324_2013199579935145984_o.jpg?_nc_cat=106&efg=eyJpIjoidCJ9&_nc_ohc=wqKSL8W66Q0AQnvcIC42Z_VOpy7lUxWeRVRwaniRQv_RHB0DqZMstbe0A&_nc_ht=scontent.fdel1-3.fna&oh=05f529eb7bf62d730129d33e870f7512&oe=5E6DC37B").placeholder(R.mipmap.anwesha_icon_round).into(image9);
         super.onViewCreated(view, savedInstanceState);
     }
 
@@ -116,6 +152,26 @@ public class AboutFragment extends Fragment implements View.OnClickListener {
                 intent.setAction(Intent.ACTION_DIAL);
                 intent.setData(Uri.parse("tel:+917424904721"));
                 break;
+            case R.id.card_call_5:
+                intent.setAction(Intent.ACTION_DIAL);
+                intent.setData(Uri.parse("tel:+917339799440"));
+                break;
+            case R.id.card_call_6:
+                intent.setAction(Intent.ACTION_DIAL);
+                intent.setData(Uri.parse("tel:+919610306949"));
+                break;
+            case R.id.card_call_7:
+                intent.setAction(Intent.ACTION_DIAL);
+                intent.setData(Uri.parse("tel:+918420607591"));
+                break;
+            case R.id.card_call_8:
+                intent.setAction(Intent.ACTION_DIAL);
+                intent.setData(Uri.parse("tel:+917704825224"));
+                break;
+            case R.id.card_call_9:
+                intent.setAction(Intent.ACTION_DIAL);
+                intent.setData(Uri.parse("tel:+918910664884"));
+                break;
             case R.id.card_facebook_1:
                 info.anwesha.iitp.utils.IntentUtils.openWebBrowser(context, "https://www.facebook.com/ashwani.yadav9499");
                 return;
@@ -127,6 +183,15 @@ public class AboutFragment extends Fragment implements View.OnClickListener {
                 return;
             case R.id.card_facebook_4:
                 info.anwesha.iitp.utils.IntentUtils.openWebBrowser(context, "https://www.facebook.com/amangrobo");
+                return;
+            case R.id.card_facebook_7:
+                info.anwesha.iitp.utils.IntentUtils.openWebBrowser(context, "https://www.facebook.com/debarghya.maity.52");
+                return;
+            case R.id.card_facebook_8:
+                info.anwesha.iitp.utils.IntentUtils.openWebBrowser(context, "https://www.facebook.com/priyanka.sachan.77964201");
+                return;
+            case R.id.card_facebook_9:
+                info.anwesha.iitp.utils.IntentUtils.openWebBrowser(context, "https://www.facebook.com/mehuli.pal.1");
                 return;
             case R.id.card_github_1:
                 info.anwesha.iitp.utils.IntentUtils.openWebBrowser(context, "https://github.com/ashwaniYDV");
@@ -140,6 +205,22 @@ public class AboutFragment extends Fragment implements View.OnClickListener {
             case R.id.card_github_4:
                 IntentUtils.openWebBrowser(context, "https://github.com/amangrobo/");
                 return;
+            case R.id.card_github_5:
+                IntentUtils.openWebBrowser(context, "https://github.com/s-ayush2903/");
+                return;
+            case R.id.card_github_6:
+                IntentUtils.openWebBrowser(context, "https://github.com/Kavya-24");
+                return;
+            case R.id.card_github_7:
+                IntentUtils.openWebBrowser(context, "https://github.com/debarghya472/");
+                return;
+            case R.id.card_github_8:
+                IntentUtils.openWebBrowser(context, "https://github.com/Priyanka-Sachan");
+                return;
+            case R.id.card_github_9:
+                IntentUtils.openWebBrowser(context, "https://github.com/Mehulipal");
+                return;
+
         }
 
         startActivity(intent);
