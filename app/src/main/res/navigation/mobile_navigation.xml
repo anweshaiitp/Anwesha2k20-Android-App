@@ -7,15 +7,15 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:label=" "
         android:name="info.anwesha.iitp.home.HomeFragment"
+        android:label=" "
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/nav_events_cat"
-        android:label="Events"
         android:name="info.anwesha.iitp.home.EventCategoryFragment"
-        tools:layout="@layout/fragment_event_category" >
+        android:label="Events"
+        tools:layout="@layout/fragment_event_category">
         <action
             android:id="@+id/action_nav_events_cat_to_eventsFragment"
             app:destination="@id/nav_events" />
@@ -23,50 +23,55 @@
 
     <fragment
         android:id="@+id/nav_accomodation"
-        android:label="Book Accomodation"
         android:name="info.anwesha.iitp.accomodation.AccomodationFragment"
-        tools:layout="@layout/fragment_accomodation"/>
+        android:label="Book Accomodation"
+        tools:layout="@layout/fragment_accomodation" />
     <fragment
         android:id="@+id/nav_pronite"
-        android:label="Pronite"
         android:name="info.anwesha.iitp.pronite.ProniteFragment"
+        android:label="Pronite"
         tools:layout="@layout/fragment_pronite" />
 
     <fragment
+        android:id="@+id/nav_game_view"
+        android:name="info.anwesha.iitp.special.GameFragment"
+        android:label="Challenging Game"
+        tools:layout="@layout/fragment_game" />
+    <fragment
         android:id="@+id/nav_special_cat"
-        android:label="Special Events"
         android:name="info.anwesha.iitp.special.SpecialCategoryFragment"
+        android:label="Special Events"
         tools:layout="@layout/fragment_special_category" />
 
     <fragment
         android:id="@+id/nav_special_events"
-        android:label="Special Events"
         android:name="info.anwesha.iitp.special.SpecialEventsFragment"
+        android:label="Special Events"
         tools:layout="@layout/fragment_events" />
 
 
     <fragment
         android:id="@+id/nav_gallery"
-        android:label="Gallery"
         android:name="info.anwesha.iitp.gallery.GalleryFragment"
+        android:label="Gallery"
         tools:layout="@layout/fragment_gallery" />
 
     <fragment
         android:id="@+id/nav_ongoing"
-        android:label="Ongoing Events"
         android:name="info.anwesha.iitp.ongoing.OngoingEventsFragment"
+        android:label="Ongoing Events"
         tools:layout="@layout/fragment_events" />
 
     <fragment
         android:id="@+id/nav_team"
-        android:label="Team"
         android:name="info.anwesha.iitp.team.TeamFragment"
+        android:label="Team"
         tools:layout="@layout/fragment_team" />
 
     <fragment
         android:id="@+id/nav_sponsors"
-        android:label="Sponsors"
         android:name="info.anwesha.iitp.sponsors.SponsorsFragment"
+        android:label="Sponsors"
         tools:layout="@layout/fragment_sponsors" />
     <activity
         android:id="@+id/nav_account"

@@ -10,7 +10,7 @@
             android:title="Home" />
         <item
             android:id="@+id/nav_accomodation"
-            android:icon="@drawable/ic_location"
+            android:icon="@drawable/ic_business_black_24dp"
             android:title="Book Accomodation"/>
 
         <item
@@ -62,6 +62,11 @@
             android:id="@+id/nav_maps"
             android:icon="@drawable/ic_map"
             android:title="Maps" />
+
+        <item
+            android:id="@+id/game_view"
+            android:icon="@drawable/ic_assistant_black_24dp"
+            android:title="Challenge"/>
 
         <item
             android:id="@+id/nav_developers"

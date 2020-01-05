@@ -8,12 +8,15 @@
     <string name="book">Submit</string>
     <string name="preference">Book your preference now!</string>
     <string-array name="days_array">
-    <item> None</item>
-    <item> Day 1</item>
-    <item> Day 2</item>
-    <item> Day 3</item>
-    <item> Day 1 and Day 2</item>
-    <item> Day 2 and Day 3</item>
-</string-array>
+        <item> None</item>
+        <item> Day 1</item>
+        <item> Day 2</item>
+        <item> Day 3</item>
+        <item> Day 1 and Day 2</item>
+        <item> Day 2 and Day 3</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
