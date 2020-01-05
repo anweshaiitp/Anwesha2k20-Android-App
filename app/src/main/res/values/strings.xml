@@ -7,6 +7,18 @@
     <string name="accomo_fragment">This Segment is work in progress, so text used here is irrelevant!!!     wgrwgr gwrgwrg wgrwdg grgrwgwr wrgwgwrgwr gwrgwrgrw gwrgwrgrwfwr2 t5h4th wf w4t  g34g </string>
     <string name="book">Submit</string>
     <string name="preference">Book your preference now!</string>
+    <string name="login_now">Login Now</string>
+    <string name="have_an_account">Have An Account?</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="school_college">School/College</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="referral_id_optional">Referral ID (optional)</string>
+    <string name="gender_m_or_f">Gender (m or f)</string>
+    <string name="register">Register</string>
     <string-array name="days_array">
         <item> None</item>
         <item> Day 1</item>

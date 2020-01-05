@@ -7,7 +7,7 @@
     app:cardCornerRadius="5dp"
     app:contentPadding="8dp"
     android:layout_margin="8dp"
-    app:cardBackgroundColor="#ffe7d7">
+    app:cardBackgroundColor="#f8f8ff">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -50,7 +50,7 @@
                 android:textStyle="bold"
                 app:autoSizeMinTextSize="12sp"
                 app:autoSizeMaxTextSize="20sp"
-                android:textColor="#D44638" />
+                android:textColor="#cc7722" />
 
             <TextView
                 android:id="@+id/post"
@@ -58,12 +58,11 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:gravity="center_vertical"
-                android:textColor="#D44638"
+                android:textColor="#cc7722"
                 app:autoSizeTextType="uniform"
                 android:maxLines="2"
                 app:autoSizeMinTextSize="12sp"
                 app:autoSizeMaxTextSize="16sp"
-                android:fontFamily="cursive"
                 tools:text="Fest Convener" />
 
             <View
@@ -85,7 +84,7 @@
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:layout_margin="4dp"
-                app:cardBackgroundColor="@color/event_detail_card_background"
+                app:cardBackgroundColor="#cc7722"
                 app:cardCornerRadius="17dp"
                 app:contentPadding="6dp">
 
@@ -102,7 +101,7 @@
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:layout_margin="4dp"
-                app:cardBackgroundColor="@color/event_detail_card_background"
+                app:cardBackgroundColor="#cc7722"
                 app:cardCornerRadius="17dp"
                 app:contentPadding="6dp">
 

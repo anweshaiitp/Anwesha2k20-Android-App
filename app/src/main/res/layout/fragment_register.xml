@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/ssf"
     tools:context=".Auth.RegisterFragment">
 
     <LinearLayout
@@ -27,8 +28,8 @@
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginBottom="8dp"
-            android:hint="First Name"
-            android:textColorHint="@color/white">
+            android:hint="@string/first_name"
+            android:textColorHint="#362204">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/register_first_name_edittext"
@@ -38,7 +39,7 @@
                 android:inputType="text"
                 android:maxLines="1"
                 android:padding="8dp"
-                android:textColor="@color/white"
+                android:textColor="#362204"
                 android:theme="@style/AppTheme.Edittext" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -48,8 +49,8 @@
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginBottom="8dp"
-            android:hint="Last Name"
-            android:textColorHint="@color/white">
+            android:hint="@string/last_name"
+            android:textColorHint="#362204">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/register_last_name_edittext"
@@ -59,7 +60,7 @@
                 android:inputType="text"
                 android:maxLines="1"
                 android:padding="8dp"
-                android:textColor="@color/white"
+                android:textColor="#362204"
                 android:theme="@style/AppTheme.Edittext" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -70,8 +71,8 @@
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginBottom="8dp"
-            android:hint="Phone Number"
-            android:textColorHint="@color/white">
+            android:hint="@string/phone_number"
+            android:textColorHint="#362204">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/register_phone_edittext"
@@ -81,7 +82,7 @@
                 android:inputType="number"
                 android:maxLines="1"
                 android:padding="8dp"
-                android:textColor="@color/white"
+                android:textColor="#362204"
                 android:theme="@style/AppTheme.Edittext" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -92,8 +93,8 @@
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginBottom="8dp"
-            android:hint="School/College"
-            android:textColorHint="@color/white">
+            android:hint="@string/school_college"
+            android:textColorHint="#362204">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/register_school_college_edittext"
@@ -103,7 +104,7 @@
                 android:inputType="text"
                 android:maxLines="1"
                 android:padding="8dp"
-                android:textColor="@color/white"
+                android:textColor="#362204"
                 android:theme="@style/AppTheme.Edittext" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -114,8 +115,8 @@
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginBottom="8dp"
-            android:hint="Email Address"
-            android:textColorHint="@color/white">
+            android:hint="@string/email_address"
+            android:textColorHint="#362204">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/register_email_edittext"
@@ -125,7 +126,7 @@
                 android:inputType="textEmailAddress"
                 android:maxLines="1"
                 android:padding="8dp"
-                android:textColor="@color/white"
+                android:textColor="#362204"
                 android:theme="@style/AppTheme.Edittext" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -136,10 +137,10 @@
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginBottom="8dp"
-            android:hint="Password"
-            android:textColorHint="@color/white"
+            android:hint="@string/password"
+            android:textColorHint="#362204"
             app:passwordToggleEnabled="true"
-            app:passwordToggleTint="@color/white">
+            app:passwordToggleTint="#362204">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/register_password_edittext"
@@ -149,7 +150,7 @@
                 android:inputType="textPassword"
                 android:maxLines="1"
                 android:padding="8dp"
-                android:textColor="@color/white"
+                android:textColor="#362204"
                 android:theme="@style/AppTheme.Edittext" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -160,10 +161,10 @@
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginBottom="8dp"
-            android:hint="Confirm Password"
-            android:textColorHint="@color/white"
+            android:hint="@string/confirm_password"
+            android:textColorHint="#362204"
             app:passwordToggleEnabled="true"
-            app:passwordToggleTint="@color/white">
+            app:passwordToggleTint="#362204">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/register_confirm_password_edittext"
@@ -173,7 +174,7 @@
                 android:inputType="textPassword"
                 android:maxLines="1"
                 android:padding="8dp"
-                android:textColor="@color/white"
+                android:textColor="#362204"
                 android:theme="@style/AppTheme.Edittext" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -184,8 +185,8 @@
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginBottom="8dp"
-            android:hint="Referral ID (optional)"
-            android:textColorHint="@color/white">
+            android:hint="@string/referral_id_optional"
+            android:textColorHint="#362204">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/register_referral_edittext"
@@ -195,7 +196,7 @@
                 android:inputType="text"
                 android:maxLines="1"
                 android:padding="8dp"
-                android:textColor="@color/white"
+                android:textColor="#362204"
                 android:theme="@style/AppTheme.Edittext" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -207,8 +208,8 @@
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginBottom="8dp"
-            android:hint="Gender (m or f)"
-            android:textColorHint="@color/white">
+            android:hint="@string/gender_m_or_f"
+            android:textColorHint="#362204">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/register_gender_edittext"
@@ -218,7 +219,7 @@
                 android:inputType="text"
                 android:maxLines="1"
                 android:padding="8dp"
-                android:textColor="@color/white"
+                android:textColor="#362204"
                 android:theme="@style/AppTheme.Edittext" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -233,7 +234,8 @@
             android:layout_marginEnd="32dp"
             android:layout_marginBottom="16dp"
             android:padding="8dp"
-            android:text="Register"
+            android:backgroundTint="#FFD700"
+            android:text="@string/register"
             android:textColor="@color/white" />
 
         <LinearLayout
@@ -248,8 +250,8 @@
                 android:layout_margin="4dp"
                 android:layout_weight="1"
                 android:gravity="end"
-                android:text="Have An Account?"
-                android:textColor="@color/darkGray"
+                android:text="@string/have_an_account"
+                android:textColor="#362204"
                 android:textSize="16sp" />
 
             <androidx.appcompat.widget.AppCompatTextView
@@ -258,8 +260,9 @@
                 android:layout_margin="4dp"
                 android:layout_weight="1"
                 android:gravity="start"
-                android:text="Login Now"
-                android:textColor="@color/colorAccent"
+                android:text="@string/login_now"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
                 android:textSize="16sp"
                 android:id="@+id/login_textview"/>
 
