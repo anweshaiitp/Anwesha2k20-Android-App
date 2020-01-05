@@ -13,7 +13,7 @@
             android:icon="@drawable/ic_business_black_24dp"
             android:title="Book Accomodation"/>
 
-        <item
+        <!--<item
             android:id="@+id/nav_theme"
             android:icon="@drawable/ic_theme_black_24dp"
             android:title="Theme" />
@@ -21,7 +21,7 @@
         <item
             android:id="@+id/afterMovie"
             android:icon="@drawable/ic_aftermovie"
-            android:title="After Movie"/>
+            android:title="After Movie"/>-->
 
         <item
             android:id="@+id/nav_events_cat"

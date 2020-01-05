@@ -100,7 +100,8 @@
                 android:layout_height="@dimen/ic_height"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:src="@drawable/ic_pronite2" />
+                android:src="@drawable/ic_audiotrack_black_24dp"/>
+
 
             <TextView
                 android:layout_width="wrap_content"
@@ -123,13 +124,17 @@
                 android:layout_width="@dimen/ic_width"
                 android:layout_height="@dimen/ic_height"
                 android:layout_weight="1"
-                android:src="@drawable/ic_touch_app"
-                android:layout_gravity="center"/>
+                android:src="@drawable/ic_vpn_key_black_24dp" />
+
+
+
+                
+              android:layout_gravity="center"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/jim_nightshade"
-                android:text="Join Us"
+                android:text="Login"
                 android:textColor="@color/brown"
                 android:textSize="@dimen/mi_text_size"
                 android:layout_gravity="center"/>

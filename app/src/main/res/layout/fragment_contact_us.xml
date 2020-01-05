@@ -178,7 +178,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
-                    android:text="Aman Deep"
+                    android:text="Himanshu Gupta"
                     android:textColor="@color/white"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -221,7 +221,7 @@
                         android:layout_marginStart="16dp"
                         android:autoLink="phone"
                         android:gravity="center_vertical"
-                        android:text="+91 9931059201"
+                        android:text="+91 9521205729"
                         android:textColorLink="@color/white"
                         android:textSize="18sp" />
 
@@ -249,7 +249,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
-                    android:text="Priyansh Singh Rao"
+                    android:text="Kartik Singh"
                     android:textColor="@color/white"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -292,7 +292,7 @@
                         android:layout_marginStart="16dp"
                         android:autoLink="phone"
                         android:gravity="center_vertical"
-                        android:text="+91 8058501770"
+                        android:text="+91 8077516207"
                         android:textColorLink="@color/white"
                         android:textSize="18sp" />
 
@@ -320,7 +320,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
-                    android:text="Roushan Kumar"
+                    android:text="Bhavani Susmitha"
                     android:textColor="@color/white"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -364,7 +364,7 @@
                         android:layout_marginStart="16dp"
                         android:autoLink="phone"
                         android:gravity="center_vertical"
-                        android:text="+91 9610098566"
+                        android:text="+91 9123519137"
                         android:textColorLink="@color/white"
                         android:textSize="18sp" />
 
