@@ -1,46 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:orientation="vertical"
     tools:context=".home.HomeFragment">
+
+    <!-- Annwesha remeberance-->
     <ImageView
         android:id="@+id/main_logo_iv"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
+        android:layout_weight="1.5"
         android:padding="16dp"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
+    <!-- Slider-->
+<!--    <ImageView-->
+<!--        android:id="@+id/mainImageArea"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_weight="5"-->
+<!--        android:scaleType="centerCrop"-->
+<!--        android:src="@drawable/semi_circle"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent" />-->
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="16dp"
+        android:layout_margin="6dp"
+        android:layout_weight="5"
         android:layout_width="match_parent"
-        android:layout_height="520dp"
-        android:src="@drawable/semi_circle"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        android:layout_height="0dp">
 
+        <com.smarteist.autoimageslider.SliderView
+            android:id="@+id/imageSlider"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:sliderAnimationDuration="600"
+            app:sliderAutoCycleDirection="back_and_forth"
+            app:sliderAutoCycleEnabled="true"
+            app:sliderCircularHandlerEnabled="true"
+            app:sliderIndicatorAnimationDuration="600"
+            app:sliderIndicatorGravity="center_horizontal|bottom"
+            app:sliderIndicatorMargin="15dp"
+            app:sliderIndicatorOrientation="horizontal"
+            app:sliderIndicatorPadding="3dp"
+            app:sliderIndicatorRadius="2dp"
+            app:sliderIndicatorSelectedColor="#5A5A5A"
+            app:sliderIndicatorUnselectedColor="#FFF"
+            app:sliderScrollTimeInSec="1"
+            app:sliderStartAutoCycle="true" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- Bottom View-->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFDE7"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:paddingBottom="20dp">
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:orientation="vertical">
 
             <ImageView
                 android:id="@+id/main_event_ll"
-                android:src="@drawable/ic_events2"
                 android:layout_width="@dimen/ic_width"
                 android:layout_height="@dimen/ic_height"
+                android:layout_gravity="center"
                 android:layout_weight="1"
-                android:layout_gravity="center"/>
+                android:src="@drawable/ic_events2" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -51,69 +89,77 @@
                 android:textColor="@color/brown"
                 android:textSize="@dimen/mi_text_size" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:orientation="vertical">
+
             <ImageView
                 android:id="@+id/main_pronite_ll"
                 android:layout_width="@dimen/ic_width"
                 android:layout_height="@dimen/ic_height"
+                android:layout_gravity="center"
                 android:layout_weight="1"
-                android:src="@drawable/ic_pronite2"
-                android:layout_gravity="center"/>
+                android:src="@drawable/ic_pronite2" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:fontFamily="@font/jim_nightshade"
                 android:text="Pronite"
                 android:textColor="@color/brown"
-                android:textSize="@dimen/mi_text_size"
-                android:layout_gravity="center"/>
+                android:textSize="@dimen/mi_text_size" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:orientation="vertical">
+
             <ImageView
                 android:id="@+id/main_login_ll"
                 android:layout_width="@dimen/ic_width"
                 android:layout_height="@dimen/ic_height"
+                android:layout_gravity="center"
                 android:layout_weight="1"
-                android:src="@drawable/ic_touch_app"
-                android:layout_gravity="center"/>
+                android:src="@drawable/ic_touch_app" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:fontFamily="@font/jim_nightshade"
                 android:text="Join Us"
                 android:textColor="@color/brown"
-                android:textSize="@dimen/mi_text_size"
-                android:layout_gravity="center"/>
+                android:textSize="@dimen/mi_text_size" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:orientation="vertical">
 
             <ImageView
                 android:id="@+id/main_gallery_ll"
-                android:src="@drawable/ic_gallery2"
                 android:layout_width="@dimen/ic_width"
                 android:layout_height="@dimen/ic_height"
+                android:layout_gravity="center"
                 android:layout_weight="1"
-                android:layout_gravity="center"/>
+                android:src="@drawable/ic_gallery2" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:fontFamily="@font/jim_nightshade"
                 android:text="Gallery"
                 android:textColor="@color/brown"
-                android:textSize="@dimen/mi_text_size"
-                android:layout_gravity="center"/>
+                android:textSize="@dimen/mi_text_size" />
         </LinearLayout>
     </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
