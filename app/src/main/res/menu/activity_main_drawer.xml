@@ -64,7 +64,7 @@
             android:title="Maps" />
 
         <item
-            android:id="@+id/game_view"
+            android:id="@+id/nav_game"
             android:icon="@drawable/ic_assistant_black_24dp"
             android:title="Challenge"/>
 
