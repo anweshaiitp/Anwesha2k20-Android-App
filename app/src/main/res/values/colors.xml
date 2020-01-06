@@ -18,5 +18,7 @@
     <color name="event_detail_card_background">#661E263F</color>
 
     <color name="brown">#3E2723</color>
+    <color name="light_yellow">#FFF9C4</color>
+    <color name="dark_yellow">#FFAB40</color>
 
 </resources>

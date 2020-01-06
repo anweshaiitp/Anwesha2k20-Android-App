@@ -96,6 +96,7 @@
         android:label="Contact"
         tools:layout="@layout/fragment_contact_us" />
 
+
     <activity
         android:id="@+id/nav_maps"
         app:action="android.intent.action.VIEW"

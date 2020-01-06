@@ -36,13 +36,11 @@ public class ContactFragment extends Fragment implements View.OnClickListener {
         CardView bus = view.findViewById(R.id.bus_schedule);
         CardView fb = view.findViewById(R.id.connect_facebook);
         CardView inst = view.findViewById(R.id.connect_instagram);
-        CardView twitter = view.findViewById(R.id.connect_twitter);
         CardView youtube = view.findViewById(R.id.connect_youtube);
         CardView link = view.findViewById(R.id.connect_linkedin);
 
         fb.setOnClickListener(this);
         inst.setOnClickListener(this);
-        twitter.setOnClickListener(this);
         youtube.setOnClickListener(this);
         link.setOnClickListener(this);
         bus.setOnClickListener(this);
@@ -61,19 +59,16 @@ public class ContactFragment extends Fragment implements View.OnClickListener {
                 info.anwesha.iitp.utils.IntentUtils.openWebBrowser(context, "https://www.iitp.ac.in/index.php?option=com_content&view=article&id=60&Itemid=66");
                 break;
             case R.id.connect_facebook:
-                info.anwesha.iitp.utils.IntentUtils.openWebBrowser(context, "https://www.facebook.com/CelestaIITP/");
+                info.anwesha.iitp.utils.IntentUtils.openWebBrowser(context, "https://m.facebook.com/anwesha.iitpatna/");
                 break;
             case R.id.connect_instagram:
-                info.anwesha.iitp.utils.IntentUtils.openWebBrowser(context, "https://www.instagram.com/celestaiitp_official/");
-                break;
-            case R.id.connect_twitter:
-                info.anwesha.iitp.utils.IntentUtils.openWebBrowser(context, "https://twitter.com/celesta_iitp");
+                info.anwesha.iitp.utils.IntentUtils.openWebBrowser(context, "https://www.instagram.com/anwesha.iitp/");
                 break;
             case R.id.connect_youtube:
-                info.anwesha.iitp.utils.IntentUtils.openWebBrowser(context, "https://www.youtube.com/channel/UCd8RpmJktBOwqT4OehcCjjg");
+                info.anwesha.iitp.utils.IntentUtils.openWebBrowser(context, "https://www.youtube.com/user/AnweshaIITP");
                 break;
             case R.id.connect_linkedin:
-                IntentUtils.openWebBrowser(context, "https://www.linkedin.com/in/celesta-iit-patna-3722b6166/");
+                IntentUtils.openWebBrowser(context, "https://in.linkedin.com/company/anweshaiitp");
                 break;
         }
 

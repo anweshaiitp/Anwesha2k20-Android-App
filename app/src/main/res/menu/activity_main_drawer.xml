@@ -74,6 +74,11 @@
             android:title="Developers" />
 
         <item
+            android:id="@+id/option_contact"
+            android:icon="@drawable/ic_contact_us"
+            android:title="Contact us" />
+
+        <item
             android:id="@+id/nav_account"
             android:icon="@drawable/ic_login"
             android:title="Login/Register" />

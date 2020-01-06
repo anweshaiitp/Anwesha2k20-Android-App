@@ -31,7 +31,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
                     android:text="Connect with us"
-                    android:textColor="@color/white"
+                    android:textColor="@color/light_yellow"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -53,7 +53,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:src="@drawable/facebook"
-                            android:tint="@color/white" />
+                            android:tint="@color/light_yellow" />
 
                     </androidx.cardview.widget.CardView>
 
@@ -70,26 +70,10 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:src="@drawable/ic_instagram"
-                            android:tint="@color/white" />
+                            android:tint="@color/light_yellow" />
 
                     </androidx.cardview.widget.CardView>
 
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/connect_twitter"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        app:cardBackgroundColor="@color/event_detail_card_background"
-                        android:layout_margin="8dp"
-                        app:cardCornerRadius="20dp"
-                        app:contentPadding="6dp">
-
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:src="@drawable/ic_twitter"
-                            android:tint="@color/white" />
-
-                    </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
                         android:id="@+id/connect_youtube"
@@ -104,7 +88,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:src="@drawable/ic_youtube"
-                            android:tint="@color/white" />
+                            android:tint="@color/light_yellow" />
 
                     </androidx.cardview.widget.CardView>
 
@@ -121,7 +105,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:src="@drawable/ic_linkedin"
-                            android:tint="@color/white" />
+                            android:tint="@color/light_yellow" />
 
                     </androidx.cardview.widget.CardView>
 
@@ -137,7 +121,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="35dp"
             android:text="Need Help?"
-            android:textColor="@color/white"
+            android:textColor="@color/dark_yellow"
             android:textDirection="firstStrong"
             android:textSize="26sp" />
 
@@ -149,7 +133,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp"
             android:text="Contact Us !"
-            android:textColor="@color/white"
+            android:textColor="@color/light_yellow"
             android:textSize="34sp"
             android:textStyle="bold" />
 
@@ -179,7 +163,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
                     android:text="Himanshu Gupta"
-                    android:textColor="@color/white"
+                    android:textColor="@color/dark_yellow"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -190,7 +174,7 @@
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="8dp"
                     android:text="(Coordinator-Media And Public Relations)"
-                    android:textColor="@color/medBlue"
+                    android:textColor="@color/light_yellow"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -211,7 +195,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:src="@drawable/ic_local_phone_black_24dp"
-                            android:tint="@color/white" />
+                            android:tint="@color/dark_yellow" />
 
                     </androidx.cardview.widget.CardView>
 
@@ -222,7 +206,7 @@
                         android:autoLink="phone"
                         android:gravity="center_vertical"
                         android:text="+91 9521205729"
-                        android:textColorLink="@color/white"
+                        android:textColorLink="@color/light_yellow"
                         android:textSize="18sp" />
 
                 </LinearLayout>
@@ -250,7 +234,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
                     android:text="Kartik Singh"
-                    android:textColor="@color/white"
+                    android:textColor="@color/dark_yellow"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -261,7 +245,7 @@
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="8dp"
                     android:text="(Coordinator-Media And Public Relations)"
-                    android:textColor="@color/medBlue"
+                    android:textColor="@color/light_yellow"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -282,7 +266,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:src="@drawable/ic_local_phone_black_24dp"
-                            android:tint="@color/white" />
+                            android:tint="@color/dark_yellow" />
 
                     </androidx.cardview.widget.CardView>
 
@@ -293,7 +277,7 @@
                         android:autoLink="phone"
                         android:gravity="center_vertical"
                         android:text="+91 8077516207"
-                        android:textColorLink="@color/white"
+                        android:textColorLink="@color/light_yellow"
                         android:textSize="18sp" />
 
                 </LinearLayout>
@@ -321,7 +305,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
                     android:text="Bhavani Susmitha"
-                    android:textColor="@color/white"
+                    android:textColor="@color/dark_yellow"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -332,7 +316,7 @@
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="8dp"
                     android:text="(Coordinator-Media And Public Relations)"
-                    android:textColor="@color/medBlue"
+                    android:textColor="@color/light_yellow"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -353,7 +337,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:src="@drawable/ic_local_phone_black_24dp"
-                            android:tint="@color/white" />
+                            android:tint="@color/dark_yellow" />
 
                     </androidx.cardview.widget.CardView>
 
@@ -365,7 +349,7 @@
                         android:autoLink="phone"
                         android:gravity="center_vertical"
                         android:text="+91 9123519137"
-                        android:textColorLink="@color/white"
+                        android:textColorLink="@color/light_yellow"
                         android:textSize="18sp" />
 
                 </LinearLayout>
@@ -393,7 +377,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
                     android:text="Don't know where we are?"
-                    android:textColor="@color/white"
+                    android:textColor="@color/dark_yellow"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -404,7 +388,7 @@
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="8dp"
                     android:text="No worries! Get Directions"
-                    android:textColor="@color/medBlue"
+                    android:textColor="@color/light_yellow"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -425,7 +409,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:src="@drawable/ic_location"
-                            android:tint="@color/white" />
+                            android:tint="@color/dark_yellow" />
 
                     </androidx.cardview.widget.CardView>
 
@@ -436,7 +420,7 @@
                         android:autoLink="web"
                         android:gravity="center_vertical"
                         android:text="https://maps.app.goo.gl/fZMAwtkMHcwbR28t8"
-                        android:textColorLink="@color/white"
+                        android:textColorLink="@color/dark_yellow"
                         android:textSize="18sp" />
 
                 </LinearLayout>
@@ -465,7 +449,7 @@
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
                     android:text="Bus Schedule"
-                    android:textColor="@color/white"
+                    android:textColor="@color/dark_yellow"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -473,7 +457,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:tint="@color/white"
+                    android:tint="@color/dark_yellow"
                     android:src="@drawable/ic_keyboard_arrow_right_black_24dp" />
 
             </LinearLayout>
