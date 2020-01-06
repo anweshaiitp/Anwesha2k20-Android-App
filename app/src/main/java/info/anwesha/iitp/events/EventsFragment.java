@@ -3,7 +3,6 @@ package info.anwesha.iitp.events;
 import android.content.Context;
 import android.os.Bundle;
 import android.transition.TransitionInflater;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,29 +13,30 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProviders;
 import androidx.navigation.fragment.NavHostFragment;
-import androidx.preference.PreferenceManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
-
-import java.util.ArrayList;
-import java.util.List;
 
 import info.anwesha.iitp.R;
-import info.anwesha.iitp.network.EventsRoutes;
-import info.anwesha.iitp.network.RetrofitClientInstance;
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
+
+//import android.util.Log;
+//import androidx.preference.PreferenceManager;
+//import androidx.recyclerview.widget.LinearLayoutManager;
+//import androidx.recyclerview.widget.RecyclerView;
+//import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
+//import java.util.ArrayList;
+//import java.util.List;
+//import info.anwesha.iitp.network.EventsRoutes;
+//import info.anwesha.iitp.network.RetrofitClientInstance;
+//import retrofit2.Call;
+//import retrofit2.Callback;
+//import retrofit2.Response;
 
 public class EventsFragment extends Fragment {
 
     private static final String ARG_PARAM1 = "data";
 
     private String club;
-    private info.anwesha.iitp.events.EventsRecyclerAdapter adapter;
+    //private info.anwesha.iitp.events.EventsRecyclerAdapter adapter;
     private info.anwesha.iitp.events.EventsViewModel viewModel;
-    private SwipeRefreshLayout swipeRefreshLayout;
+    //private SwipeRefreshLayout swipeRefreshLayout;
     private Context context;
 
     public EventsFragment() {
@@ -69,20 +69,20 @@ public class EventsFragment extends Fragment {
         if (getActivity() != null)
             ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle(club + " Events");
 
-        swipeRefreshLayout = view.findViewById(R.id.swipe_refresh_events);
-        swipeRefreshLayout.setOnRefreshListener(this::updateData);
+        //swipeRefreshLayout = view.findViewById(R.id.swipe_refresh_events);
+      /*  swipeRefreshLayout.setOnRefreshListener(this::updateData);
 
-        RecyclerView recyclerView = view.findViewById(R.id.rv_feed_single_type);
-        recyclerView.setLayoutManager(new LinearLayoutManager(context));
+        //RecyclerView recyclerView = view.findViewById(R.id.rv_feed_single_type);
+        //recyclerView.setLayoutManager(new LinearLayoutManager(context));
 
         adapter = new info.anwesha.iitp.events.EventsRecyclerAdapter(context, (EventsRecyclerAdapter.OnEventSelectedListener) context);
         recyclerView.setAdapter(adapter);
 
         observeAll();
-
+*/
         super.onViewCreated(view, savedInstanceState);
     }
-
+/*
     private void observeAll() {
         viewModel.loadAllEvents().observe(this, eventItems -> {
             List<info.anwesha.iitp.events.EventItem> newList = new ArrayList<>();
@@ -132,5 +132,5 @@ public class EventsFragment extends Fragment {
                     swipeRefreshLayout.setRefreshing(false);
             }
         });
-    }
+  */
 }

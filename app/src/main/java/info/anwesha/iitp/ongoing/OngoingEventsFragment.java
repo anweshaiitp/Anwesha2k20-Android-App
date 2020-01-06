@@ -8,7 +8,6 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
@@ -32,18 +31,18 @@ public class OngoingEventsFragment extends Fragment {
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_events, container, false);
+        View view = inflater.inflate(R.layout.fragment_event_category, container, false);
 
-        swipeRefreshLayout = view.findViewById(R.id.swipe_refresh_events);
-        swipeRefreshLayout.setOnRefreshListener(this::updateData);
+        //     swipeRefreshLayout = view.findViewById(R.id.swipe_refresh_events);
+//        swipeRefreshLayout.setOnRefreshListener(this::updateData);
 
-        recyclerView = view.findViewById(R.id.rv_feed_single_type);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+        // recyclerView = view.findViewById(R.id.rv_feed_single_type);
+//        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
-        adapter = new EventsRecyclerAdapter(requireContext(), (EventsRecyclerAdapter.OnEventSelectedListener) requireContext());
-        recyclerView.setAdapter(adapter);
+        //adapter = new EventsRecyclerAdapter(requireContext(), (EventsRecyclerAdapter.OnEventSelectedListener) requireContext());
+        //      recyclerView.setAdapter(adapter);
 
-        updateData();
+        //updateData();
 
         return view;
     }

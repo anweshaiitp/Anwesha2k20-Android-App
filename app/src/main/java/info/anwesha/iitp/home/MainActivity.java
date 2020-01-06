@@ -37,9 +37,9 @@ import com.google.android.play.core.install.model.UpdateAvailability;
 import com.google.android.play.core.tasks.Task;
 import com.google.firebase.messaging.FirebaseMessaging;
 
+import info.anwesha.iitp.Auth.LoginRegisterActivity;
 import info.anwesha.iitp.BuildConfig;
 import info.anwesha.iitp.R;
-import info.anwesha.iitp.Auth.LoginRegisterActivity;
 import info.anwesha.iitp.events.EventDetailsFragment;
 import info.anwesha.iitp.events.EventsRecyclerAdapter;
 
@@ -60,7 +60,6 @@ public class MainActivity extends AppCompatActivity implements EventsRecyclerAda
         setContentView(R.layout.activity_main);
 
         prefs = PreferenceManager.getDefaultSharedPreferences(this);
-
         Toolbar toolbar = findViewById(R.id.toolbar);
         toolbar.setTitle("");
         setSupportActionBar(toolbar);
@@ -72,7 +71,7 @@ public class MainActivity extends AppCompatActivity implements EventsRecyclerAda
         navAccount = menu.findItem(R.id.nav_account);
 
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_events_cat, R.id.nav_ongoing, R.id.nav_pronite, R.id.nav_special_cat,
+                R.id.nav_home, R.id.nav_events_cat, R.id.nav_pronite, R.id.nav_special_cat,
                 R.id.nav_gallery, R.id.nav_team, R.id.nav_sponsors, R.id.nav_maps, R.id.nav_developers, R.id.nav_account, R.id.nav_accomodation, R.id.nav_game)
                 .setDrawerLayout(drawer)
                 .build();

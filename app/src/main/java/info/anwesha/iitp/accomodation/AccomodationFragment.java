@@ -17,9 +17,6 @@ import android.widget.Spinner;
 
 import info.anwesha.iitp.R;
 
-/**
- * A simple {@link Fragment} subclass.
- */
 
 public class AccomodationFragment extends Fragment implements AdapterView.OnItemSelectedListener {
 
@@ -28,7 +25,6 @@ public class AccomodationFragment extends Fragment implements AdapterView.OnItem
 
 
     public AccomodationFragment() {
-
     }
 
 
