@@ -25,8 +25,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Backend &amp; Web Developers"
-                android:textColor="@color/white"
+                android:text="@string/backend_amp_web_developers"
+                android:textColor="@color/registration_page"
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
@@ -46,6 +46,7 @@
                 <ImageView
                     android:id="@+id/image1"
                     android:layout_width="match_parent"
+                    android:contentDescription="@string/img"
                     android:layout_height="match_parent"
                     android:scaleType="centerCrop" />
 
@@ -61,8 +62,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
-                    android:text="Ashwani Yadav"
-                    android:textColor="@color/medBlue"
+                    android:text="@string/ashwani_yadav"
+                    android:textColor="@color/registration_page"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -156,8 +157,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
-                    android:text="Amartya Mondal"
-                    android:textColor="@color/medBlue"
+                    android:text="@string/amish_mittal"
+                    android:textColor="@color/registration_page"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -222,28 +223,6 @@
             </LinearLayout>
 
         </LinearLayout>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="24dp"
-            app:cardBackgroundColor="@color/event_detail_card_background"
-            app:cardCornerRadius="16dp"
-            app:cardElevation="0dp"
-            app:contentPadding="4dp">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="App Developers"
-                android:textColor="@color/white"
-                android:textSize="24sp"
-                android:textStyle="bold" />
-
-        </androidx.cardview.widget.CardView>
-
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -272,8 +251,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
-                    android:text="Somenath Sarkar"
-                    android:textColor="@color/medBlue"
+                    android:text="@string/vs_subhang"
+                    android:textColor="@color/registration_page"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -339,102 +318,123 @@
 
         </LinearLayout>
 
-        <LinearLayout
+
+
+
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp">
+            android:layout_margin="24dp"
+            app:cardBackgroundColor="@color/event_detail_card_background"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="0dp"
+            app:contentPadding="4dp">
 
-            <com.google.android.material.card.MaterialCardView
-                android:layout_width="120dp"
-                android:layout_height="120dp"
-                app:cardCornerRadius="8dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/app_developers"
+                android:textColor="@color/registration_page"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
-                <ImageView
-                    android:id="@+id/image4"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:scaleType="centerCrop" />
+        </androidx.cardview.widget.CardView>
 
-            </com.google.android.material.card.MaterialCardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:cardCornerRadius="8dp">
+
+            <ImageView
+                android:id="@+id/image4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/amartya_mondal"
+                android:textColor="@color/registration_page"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:padding="8dp">
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_call_4"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
                     android:layout_margin="8dp"
-                    android:text="Aman Jee"
-                    android:textColor="@color/medBlue"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
+                    app:cardBackgroundColor="@color/event_detail_card_background"
+                    app:cardCornerRadius="20dp"
+                    app:contentPadding="6dp">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_local_phone_black_24dp"
+                        android:tint="@color/white" />
 
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/card_call_4"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:layout_margin="8dp"
-                        app:cardBackgroundColor="@color/event_detail_card_background"
-                        app:cardCornerRadius="20dp"
-                        app:contentPadding="6dp">
+                </androidx.cardview.widget.CardView>
 
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:src="@drawable/ic_local_phone_black_24dp"
-                            android:tint="@color/white" />
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_facebook_4"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="8dp"
+                    app:cardBackgroundColor="@color/event_detail_card_background"
+                    app:cardCornerRadius="20dp"
+                    app:contentPadding="6dp">
 
-                    </androidx.cardview.widget.CardView>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/facebook"
+                        android:tint="@color/white" />
 
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/card_facebook_4"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:layout_margin="8dp"
-                        app:cardBackgroundColor="@color/event_detail_card_background"
-                        app:cardCornerRadius="20dp"
-                        app:contentPadding="6dp">
+                </androidx.cardview.widget.CardView>
 
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:src="@drawable/facebook"
-                            android:tint="@color/white" />
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_github_4"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="8dp"
+                    app:cardBackgroundColor="@color/event_detail_card_background"
+                    app:cardCornerRadius="20dp"
+                    app:contentPadding="6dp">
 
-                    </androidx.cardview.widget.CardView>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/github_circle"
+                        android:tint="@color/white" />
 
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/card_github_4"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:layout_margin="8dp"
-                        app:cardBackgroundColor="@color/event_detail_card_background"
-                        app:cardCornerRadius="20dp"
-                        app:contentPadding="6dp">
-
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:src="@drawable/github_circle"
-                            android:tint="@color/white" />
-
-                    </androidx.cardview.widget.CardView>
-
-                </LinearLayout>
-
+                </androidx.cardview.widget.CardView>
 
             </LinearLayout>
 
         </LinearLayout>
-
+    </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -463,8 +463,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
-                    android:text="Ayush Shrivastava"
-                    android:textColor="@color/medBlue"
+                    android:text="@string/somenath_sarkar"
+                    android:textColor="@color/registration_page"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -491,6 +491,23 @@
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/card_facebook_5"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="8dp"
+                        app:cardBackgroundColor="@color/event_detail_card_background"
+                        app:cardCornerRadius="20dp"
+                        app:contentPadding="6dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/facebook"
+                            android:tint="@color/white" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
                         android:id="@+id/card_github_5"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
@@ -512,6 +529,7 @@
             </LinearLayout>
 
         </LinearLayout>
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -541,8 +559,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
-                    android:text="Kavya Goyal"
-                    android:textColor="@color/medBlue"
+                    android:text="@string/ayush_shrivastava"
+                    android:textColor="@color/registration_page"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -567,7 +585,6 @@
                             android:tint="@color/white" />
 
                     </androidx.cardview.widget.CardView>
-
 
                     <androidx.cardview.widget.CardView
                         android:id="@+id/card_github_6"
@@ -620,8 +637,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
-                    android:text="Debarghya Maiti"
-                    android:textColor="@color/medBlue"
+                    android:text="@string/kavya_goyal"
+                    android:textColor="@color/registration_page"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -647,22 +664,6 @@
 
                     </androidx.cardview.widget.CardView>
 
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/card_facebook_7"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:layout_margin="8dp"
-                        app:cardBackgroundColor="@color/event_detail_card_background"
-                        app:cardCornerRadius="20dp"
-                        app:contentPadding="6dp">
-
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:src="@drawable/facebook"
-                            android:tint="@color/white" />
-
-                    </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
                         android:id="@+id/card_github_7"
@@ -715,8 +716,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
-                    android:text="Priyanka Sachan"
-                    android:textColor="@color/medBlue"
+                    android:text="@string/debarghya_maiti"
+                    android:textColor="@color/registration_page"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -810,8 +811,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
-                    android:text="Mehuli Pal"
-                    android:textColor="@color/medBlue"
+                    android:text="@string/priyanka_sachan"
+                    android:textColor="@color/registration_page"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -856,6 +857,101 @@
 
                     <androidx.cardview.widget.CardView
                         android:id="@+id/card_github_9"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="8dp"
+                        app:cardBackgroundColor="@color/event_detail_card_background"
+                        app:cardCornerRadius="20dp"
+                        app:contentPadding="6dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/github_circle"
+                            android:tint="@color/white" />
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                app:cardCornerRadius="8dp">
+
+                <ImageView
+                    android:id="@+id/image10"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="@string/mehuli_pal"
+                    android:textColor="@color/registration_page"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_call_10"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="8dp"
+                        app:cardBackgroundColor="@color/event_detail_card_background"
+                        app:cardCornerRadius="20dp"
+                        app:contentPadding="6dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_local_phone_black_24dp"
+                            android:tint="@color/white" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_facebook_10"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="8dp"
+                        app:cardBackgroundColor="@color/event_detail_card_background"
+                        app:cardCornerRadius="20dp"
+                        app:contentPadding="6dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/facebook"
+                            android:tint="@color/white" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_github_10"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:layout_margin="8dp"

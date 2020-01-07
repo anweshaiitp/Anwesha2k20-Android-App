@@ -1,8 +1,6 @@
 package info.anwesha.iitp.team;
 
 import android.content.Context;
-import android.content.Intent;
-import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -51,10 +49,10 @@ public class TeamRecyclerAdapter extends RecyclerView.Adapter<info.anwesha.iitp.
                     .into(holder.image);
 
             holder.facebook.setOnClickListener(v -> IntentUtils.openWebBrowser(context, current.getFacebook()));
-            holder.phone.setOnClickListener(v -> {
+            /*holder.phone.setOnClickListener(v -> {
                 Intent i = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + current.getPhone()));
                 context.startActivity(i);
-            });
+            });*/
 
         } else {
             holder.name.setText("Loading ...");

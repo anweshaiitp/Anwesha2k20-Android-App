@@ -7,7 +7,7 @@
     app:cardCornerRadius="5dp"
     app:contentPadding="8dp"
     android:layout_margin="8dp"
-    app:cardBackgroundColor="#f8f8ff">
+    app:cardBackgroundColor="@color/team_page_background">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -91,6 +91,7 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:clickable="false"
                     android:src="@drawable/ic_local_phone_black_24dp"
                     android:tint="@color/white" />
 

@@ -30,5 +30,19 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="backend_amp_web_developers"><![CDATA[Backend & Web Developers]]></string>
+    <string name="ashwani_yadav">Ashwani Yadav</string>
+    <string name="amartya_mondal">Amartya Mondal</string>
+    <string name="app_developers">App Developers</string>
+    <string name="amish_mittal">Amish Mittal</string>
+    <string name="somenath_sarkar">Somenath Sarkar</string>
+    <string name="ayush_shrivastava">Ayush Shrivastava</string>
+    <string name="subhang_vasireddy">Subhang Vasireddy</string>
+    <string name="kavya_goyal">Kavya Goyal</string>
+    <string name="debarghya_maiti">Debarghya Maiti</string>
+    <string name="priyanka_sachan">Priyanka Sachan</string>
+    <string name="mehuli_pal">Mehuli Pal</string>
+    <string name="vs_subhang">VS Subhang</string>
+    <string name="img">img</string>
 
 </resources>
