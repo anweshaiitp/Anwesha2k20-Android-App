@@ -56,7 +56,7 @@ public class ResendActivationFragment extends Fragment {
         registerTextView.setOnClickListener(view1 -> loadFragment(new RegisterFragment()));
 
         ImageView imageView = view.findViewById(R.id.resend_image);
-        Glide.with( requireContext() ).load( R.drawable.celesta_logo_long_2 ).into(imageView);
+        Glide.with( requireContext() ).load( R.drawable.anwesha_logo_long_2 ).into(imageView);
 
         Button resendActivationButton = view.findViewById(R.id.resend_activation_button);
         resendActivationButton.setOnClickListener(view12 -> {
