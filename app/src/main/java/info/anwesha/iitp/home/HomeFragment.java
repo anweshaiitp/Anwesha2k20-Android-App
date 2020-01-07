@@ -97,9 +97,9 @@ public class HomeFragment extends Fragment {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
         int id = item.getItemId();
-        if (id == R.id.action_contact) {
+        if (id == R.id.nav_ongoing) {
             NavController navController = Navigation.findNavController(getActivity(), R.id.nav_host_fragment);
-            navController.navigate(R.id.option_contact);
+            navController.navigate(R.id.nav_ongoing);
             return true;
         }
 
