@@ -133,9 +133,9 @@ public class MainActivity extends AppCompatActivity implements EventsRecyclerAda
     @Override
     protected void onResume() {
         super.onResume();
-        if (PreferenceManager.getDefaultSharedPreferences(this).getBoolean("login_status", false))
-            navAccount.setTitle("Profile");
-        else navAccount.setTitle("Login/Register");
+//        if (PreferenceManager.getDefaultSharedPreferences(this).getBoolean("login_status", false))
+//            navAccount.setTitle("Profile");
+//        else navAccount.setTitle("Login/Register");
 
         new Handler().postDelayed(this::updateApp, 1000);
     }

@@ -3,7 +3,7 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="default_notification_channel_id">notifications</string>
     <string name="default_notification_channel_description">All the notifications are sent through this channel.</string>
-    <string name="celesta_app">https://celesta.org.in/app/</string>
+    <string name="celesta_app">https://anwesha.info/app/</string>
     <string name="accomo_fragment">This Segment is work in progress, so text used here is irrelevant!!!     wgrwgr gwrgwrg wgrwdg grgrwgwr wrgwgwrgwr gwrgwrgrw gwrgwrgrwfwr2 t5h4th wf w4t  g34g </string>
     <string name="book">Submit</string>
     <string name="preference">Book your preference now!</string>
@@ -34,6 +34,7 @@
     <string name="ashwani_yadav">Ashwani Yadav</string>
     <string name="amartya_mondal">Amartya Mondal</string>
     <string name="app_developers">App Developers</string>
+    <string name="other_contributors">Contributors</string>
     <string name="amish_mittal">Amish Mittal</string>
     <string name="somenath_sarkar">Somenath Sarkar</string>
     <string name="ayush_shrivastava">Ayush Shrivastava</string>

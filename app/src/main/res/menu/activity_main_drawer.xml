@@ -8,10 +8,10 @@
             android:id="@+id/nav_home"
             android:icon="@drawable/ic_home"
             android:title="Home" />
-        <item
-            android:id="@+id/nav_accomodation"
-            android:icon="@drawable/ic_business_black_24dp"
-            android:title="Book Accomodation"/>
+<!--        <item-->
+<!--            android:id="@+id/nav_accomodation"-->
+<!--            android:icon="@drawable/ic_business_black_24dp"-->
+<!--            android:title="Book Accomodation"/>-->
 
         <!--<item
             android:id="@+id/nav_theme"
@@ -81,7 +81,7 @@
         <item
             android:id="@+id/nav_account"
             android:icon="@drawable/ic_login"
-            android:title="Login/Register" />
+            android:title="Register" />
 
     </group>
 
