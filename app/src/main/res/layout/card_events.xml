@@ -81,7 +81,7 @@
             android:layout_gravity="end|center"
             android:contentDescription="speaker avatar"
             android:scaleType="centerInside"
-            android:src="@drawable/logo_alt" />
+            android:src="@drawable/anwesha_logo" />
 
     </LinearLayout>
 
