@@ -8,20 +8,20 @@ import android.content.SharedPreferences;
 import android.content.res.ColorStateList;
 import android.net.Uri;
 import android.os.Bundle;
-import android.util.Log;
+//import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.EditText;
+//import android.widget.Button;
+//import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
+//import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.AlertDialog;
+//import androidx.appcompat.app.AlertDialog;
 import androidx.cardview.widget.CardView;
 import androidx.lifecycle.ViewModelProviders;
 import androidx.preference.PreferenceManager;
@@ -30,19 +30,19 @@ import com.bumptech.glide.Glide;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 
-import java.util.List;
+/*import java.util.List;
 
 import info.anwesha.iitp.Auth.LoginRegisterActivity;
-import info.anwesha.iitp.Auth.LogoutResponse;
+import info.anwesha.iitp.Auth.LogoutResponse;*/
 import info.anwesha.iitp.R;
-import info.anwesha.iitp.network.EventsRoutes;
-import info.anwesha.iitp.network.RetrofitClientInstance;
+//import info.anwesha.iitp.network.EventsRoutes;
+//import info.anwesha.iitp.network.RetrofitClientInstance;
 import info.anwesha.iitp.utils.ImageViewerActivity;
-import okhttp3.MultipartBody;
+/*import okhttp3.MultipartBody;
 import okhttp3.RequestBody;
 import retrofit2.Call;
 import retrofit2.Callback;
-import retrofit2.Response;
+import retrofit2.Response;*/
 
 public class EventDetailsFragment extends BottomSheetDialogFragment {
 
@@ -118,7 +118,7 @@ public class EventDetailsFragment extends BottomSheetDialogFragment {
         CardView cardQua = view.findViewById(R.id.card_event_details_qua);
         CardView cardPen = view.findViewById(R.id.card_event_details_pen);
 
-        Button register = view.findViewById(R.id.button_register);
+        //Button register = view.findViewById(R.id.button_register);
 
         if (color[0] != 0) {
             cardPrimary.setCardBackgroundColor(color[0]);
@@ -126,7 +126,7 @@ public class EventDetailsFragment extends BottomSheetDialogFragment {
             cardTer.setCardBackgroundColor(color[0]);
             cardQua.setCardBackgroundColor(color[0]);
             cardPen.setCardBackgroundColor(color[0]);
-            register.setBackgroundTintList(ColorStateList.valueOf(color[0]));
+            // register.setBackgroundTintList(ColorStateList.valueOf(color[0]));
         }
 
         TextView name = view.findViewById(R.id.name);
@@ -151,7 +151,7 @@ public class EventDetailsFragment extends BottomSheetDialogFragment {
             organiserPhone.setImageTintList(ColorStateList.valueOf(color[2]));
             rulebook.setTextColor(color[2]);
             rulebookImg.setImageTintList(ColorStateList.valueOf(color[2]));
-            register.setTextColor(color[2]);
+            //register.setTextColor(color[2]);
         }
 
         name.setText(current.getEvName());
@@ -197,7 +197,7 @@ public class EventDetailsFragment extends BottomSheetDialogFragment {
             cardPen.setVisibility(View.GONE);
         }
 
-        if (current.getEvAmount() != null && !current.getEvAmount().isEmpty()) {
+        /*if (current.getEvAmount() != null && !current.getEvAmount().isEmpty()) {
             register.setText(String.format("Register (₹ %s)", current.getEvAmount()));
         }
 
@@ -264,11 +264,11 @@ public class EventDetailsFragment extends BottomSheetDialogFragment {
                 Log.e("Error", "onFailure: " + t.getMessage());
                 Toast.makeText(context, "Something went wrong!!!", Toast.LENGTH_LONG).show();
             }
-        });
+        });*/
 
     }
 
-    private void showAlertDialog() {
+    /*private void showAlertDialog() {
         final View dialogView = getLayoutInflater().inflate(R.layout.dialog_register_team_event, null);
 
         AlertDialog.Builder builder = new AlertDialog.Builder(requireContext());
@@ -317,9 +317,9 @@ public class EventDetailsFragment extends BottomSheetDialogFragment {
         });
 
         alertDialog.show();
-    }
+    }*/
 
-    private void registerTeamEvent(String teamName, String c1, String c2, String c3, String c4, String c5, AlertDialog alertDialog) {
+    /*private void registerTeamEvent(String teamName, String c1, String c2, String c3, String c4, String c5, AlertDialog alertDialog) {
 
         progressDialog.setMessage("Registering...");
         if (progressDialog != null) progressDialog.show();
@@ -367,5 +367,5 @@ public class EventDetailsFragment extends BottomSheetDialogFragment {
             }
         });
 
-    }
+     }*/
 }

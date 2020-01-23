@@ -202,6 +202,7 @@
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
+        <!--
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_register"
@@ -211,7 +212,7 @@
             android:padding="16dp"
             android:text="Register"
             app:backgroundTint="@color/event_detail_card_background" />
-
+                                                                      -->
     </LinearLayout>
 
 </androidx.core.widget.NestedScrollView>
