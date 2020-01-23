@@ -18,7 +18,13 @@
     <color name="event_detail_card_background">#661E263F</color>
     <color name="registration_page">#f5f2d0</color>
     <color name="team_page_background">#f8f8ff</color>
-    <color name="brown">#3E2723</color>
+    <!--    <color name="team_text">#cc7722</color>-->
+
+
+    <color name="team_text">#6f4e37</color>
+    <color name="brown">#654321</color>
+    <!--    <color name="text_color">#B5651D</color>-->
+    <color name="text_color">#964B00</color>
     <color name="light_yellow">#FFF9C4</color>
     <color name="dark_yellow">#FFAB40</color>
 
