@@ -1,4 +1,4 @@
-package info.anwesha.iitp.ongoing;
+package info.anwesha.iitp.livefeed;
 
 
 import android.os.Bundle;
