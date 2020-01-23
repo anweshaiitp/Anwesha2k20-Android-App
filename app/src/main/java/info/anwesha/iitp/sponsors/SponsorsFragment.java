@@ -25,13 +25,13 @@ public class SponsorsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_sponsors, container, false);
 
-        RecyclerView recyclerView = view.findViewById(R.id.recycler_sponsors);
-        recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 2));
-
-        adapter = new SponsorsAdapter(getContext());
-        recyclerView.setAdapter(adapter);
-
-        populateData();
+//        RecyclerView recyclerView = view.findViewById(R.id.recycler_sponsors);
+//        recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 2));
+//
+//        adapter = new SponsorsAdapter(getContext());
+//        recyclerView.setAdapter(adapter);
+//
+//        populateData();
 
         return view;
     }
