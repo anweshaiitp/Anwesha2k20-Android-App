@@ -30,7 +30,7 @@ public class ImageViewerActivity extends AppCompatActivity {
             String url = getIntent().getStringExtra("image_url");
             Glide.with(this)
                     .load(url)
-                    .placeholder(R.drawable.logo_alt)
+                    .placeholder(R.drawable.anwesha_logo)
                     .into(image);
 
         } else {
