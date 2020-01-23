@@ -40,6 +40,7 @@ import com.google.firebase.messaging.FirebaseMessaging;
 import info.anwesha.iitp.Auth.LoginRegisterActivity;
 import info.anwesha.iitp.BuildConfig;
 import info.anwesha.iitp.R;
+
 import info.anwesha.iitp.events.EventDetailsFragment;
 import info.anwesha.iitp.events.EventsRecyclerAdapter;
 
@@ -53,11 +54,13 @@ public class MainActivity extends AppCompatActivity implements EventsRecyclerAda
     private NavigationView navigationView;
     private AppUpdateManager appUpdateManager;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getWindow().setBackgroundDrawableResource(R.drawable.back);
         setContentView(R.layout.activity_main);
+
 
         prefs = PreferenceManager.getDefaultSharedPreferences(this);
         Toolbar toolbar = findViewById(R.id.toolbar);
