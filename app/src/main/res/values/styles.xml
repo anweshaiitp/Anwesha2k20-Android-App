@@ -47,5 +47,12 @@
         <item name="android:navigationBarColor">@color/transparent</item>
     </style>
 
+    <style name="NoActionBar" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">#000000</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:navigationBarColor">@color/black</item>
+    </style>
+
 
 </resources>
