@@ -25,6 +25,7 @@
 
                 <ImageView
                     android:id="@+id/poster"
+                    android:src="@drawable/kk"
                     android:layout_width="match_parent"
                     android:layout_height="250dp" />
 
@@ -38,7 +39,7 @@
                     android:padding="12dp"
                     android:textStyle="bold"
                     android:textSize="20sp"
-                    android:text="Anubhav Singh Bassi" />
+                    android:text="KK" />
 
             </LinearLayout>
 
@@ -57,7 +58,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="16dp"
-                android:text="A lawyer-turned-UPSC aspirant-turned-entrepreneur-turned-comic, Anubhav Bassi is finally doing something productive after many failures because he thinks that his failures are his achievements. A perfect storyteller who makes fun of himself and everything that has come in his way till date. His style of comedy is interestingly natural with the whole act that seems like a casual conversation with hilarious content. One of the best stand-up comedians of the next gen."
+                android:text="Hearing the melodies that make your heart sway away from reality, making you fall in the dreamscape of eternity.
+Tu jo mila...! Dil ibadat kar rha h... ! Khuda jane!
+With songs that touch the strings of your heart and make them resonate with the melodies of love, this artists is all set to perfom on the stage of Anwesha this year!
+
+Feel the West Winds, as we set sails to a Journey in the Mist of Memories.
+Anwesha'20 brings to you, performing first time in Patna!!The one and only, magician of melody... THE KK will be going live this Anwesha on 9th February."
                 android:textColor="@color/team_text"
                 android:textSize="18sp" />
 
@@ -83,7 +89,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="8dp"
-                    android:text="Date : 09-11-2019"
+                    android:text="Date : 09-02-2020"
                     android:textColor="@color/team_text"
                     android:textSize="18sp" />
 
@@ -136,7 +142,7 @@
             app:cardBackgroundColor="@color/team_page_background"
             app:cardCornerRadius="8dp">
 
-            <LinearLayout
+            <!--<LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
@@ -161,7 +167,7 @@
                     android:src="@drawable/ic_local_phone_black_24dp"
                     android:tint="@color/team_text" />
 
-            </LinearLayout>
+            </LinearLayout>-->
 
         </androidx.cardview.widget.CardView>
 
