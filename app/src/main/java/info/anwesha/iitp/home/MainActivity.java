@@ -37,7 +37,10 @@ import com.google.android.play.core.install.model.UpdateAvailability;
 import com.google.android.play.core.tasks.Task;
 import com.google.firebase.messaging.FirebaseMessaging;
 
+import java.util.Calendar;
+
 import info.anwesha.iitp.Auth.LoginRegisterActivity;
+
 import info.anwesha.iitp.BuildConfig;
 import info.anwesha.iitp.R;
 
@@ -150,14 +153,34 @@ public class MainActivity extends AppCompatActivity implements EventsRecyclerAda
     }
 
     private void populateHeaderView() {
-
+        Calendar c = Calendar.getInstance();
+        int day = c.get(Calendar.DAY_OF_MONTH);
+        int result, m=1,j,k;
+        String str="";
+        if(day>=24&&day<32)
+        { result = 38-day;
+            str = result + " days to go";
+        }
+        else if(day>=1&&day<7)
+        {
+            result = 7-day;
+            str = result + " days to go";
+        }
+        else if (day == 7)
+            str = "1st day";
+        else if (day == 8)
+            str = "2nd day";
+        else if (day == 9)
+            str = "3rd day";
+        else
+            str = "Meeting next year";
         View v = navigationView.getHeaderView(0);
 
         if (v != null) {
             String name = prefs.getString("first_name", "");
             ((TextView) v.findViewById(R.id.name)).setText(name.isEmpty() ? "Anwesha IITP" : name);
             String id = prefs.getString("celesta_id", "");
-            ((TextView) v.findViewById(R.id.celesta_id)).setText(id.isEmpty() ? "Guest User" : id);
+            ((TextView) v.findViewById(R.id.celesta_id)).setText(id.isEmpty() ? str : id);
             ImageView profileImage = v.findViewById(R.id.image);
             Glide.with(this)
                     .load(prefs.getString("qr_code", ""))
