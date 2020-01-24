@@ -44,6 +44,11 @@
             android:title="Special Events" />
 
         <item
+            android:id="@+id/nav_competition"
+            android:icon="@drawable/ic_competition"
+            android:title="Competition"/>
+
+        <item
             android:id="@+id/nav_gallery"
             android:icon="@drawable/ic_gallery"
             android:title="Gallery" />

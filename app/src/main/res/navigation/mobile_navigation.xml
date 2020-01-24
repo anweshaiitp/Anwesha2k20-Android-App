@@ -69,6 +69,13 @@
         tools:layout="@layout/fragment_team" />
 
     <fragment
+        android:id="@+id/nav_competition"
+        android:name="info.anwesha.iitp.events.EventsFragment"
+        android:label="Competition"
+        tools:layout="@layout/fragment_events" />
+
+
+    <fragment
         android:id="@+id/nav_sponsors"
         android:name="info.anwesha.iitp.sponsors.SponsorsFragment"
         android:label="Sponsors"
