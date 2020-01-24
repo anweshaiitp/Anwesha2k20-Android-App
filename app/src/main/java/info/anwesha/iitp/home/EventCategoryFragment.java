@@ -15,6 +15,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProviders;
 import androidx.navigation.fragment.NavHostFragment;
 import androidx.preference.PreferenceManager;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
@@ -34,7 +35,6 @@ public class EventCategoryFragment extends Fragment {
 
     public EventCategoryFragment() {
     }
-
     private SwipeRefreshLayout swipeRefreshLayout;
     private EventsViewModel viewModel;
 
@@ -77,10 +77,10 @@ public class EventCategoryFragment extends Fragment {
         emptyView = view.findViewById(R.id.empty_view);
 
         recyclerView = view.findViewById(R.id.rv_event_category);
-        //recyclerView.setLayoutManager(new GridLayoutManager(context, 2));
+        recyclerView.setLayoutManager(new GridLayoutManager(context, 2));
 
         adapter = new EventsCategoryAdapter(context);
-        // recyclerView.setAdapter(adapter);
+        recyclerView.setAdapter(adapter);
 
         observeAll();
 
@@ -88,7 +88,7 @@ public class EventCategoryFragment extends Fragment {
     }
 
     private void observeAll() {
-        viewModel.loadAllClubs().observe(this, strings -> {
+        viewModel.loadEventsCategory().observe(this, strings -> {
 
             List<String> temp = new ArrayList<>();
 
