@@ -13,7 +13,7 @@ import static androidx.room.OnConflictStrategy.REPLACE;
 @Dao
 public interface EventsDao {
 
-    @Query("SELECT * FROM events WHERE evCategory = 'pronite' OR evCategory = 'proshow' OR evCategory='pr-eanwesdha' OR evCategory='informal' ORDER BY evStartTime ASC")
+    @Query("SELECT * FROM events WHERE evCategory = 'pronite' OR evCategory = 'proshow' OR evCategory='pre-anwesha' OR evCategory='informal' OR evCategory='technical' OR evCategory = 'cultural' OR evCategory = 'awelfare' ORDER BY evStartTime ASC")
     LiveData<List<EventItem>> loadAllEvents();
 
     @Query("SELECT * FROM events WHERE evCategory = 'Exhibitions' ORDER BY evStartTime ASC")
@@ -34,10 +34,10 @@ public interface EventsDao {
     @Query("SELECT evClub FROM events WHERE evCategory = 'Eventscollege' OR evCategory = 'Eventsall'")
     LiveData<List<String>> loadAllClubs();
 
-    @Query("SELECT evCategory FROM events WHERE evCategory = 'technical' OR evCategory = 'cultural' OR evCategory = 'awelfare' or evCategory='Eventscollege' or evCategory='Eventsall'")
+    @Query("SELECT evCategory FROM events WHERE evCategory = 'technical' OR evCategory = 'cultural' OR evCategory = 'awelfare'")
     LiveData<List<String>> loadCompetetionsCategory();
 
-    @Query("SELECT evCategory FROM events WHERE evCategory = 'pronite' OR evCategory = 'proshow' OR evCategory='pr-eanwesdha' OR evCategory='informal' ")
+    @Query("SELECT evCategory FROM events WHERE evCategory = 'pronite' OR evCategory = 'proshow' OR evCategory='pre-anwesha' OR evCategory='informal' ")
     LiveData<List<String>> loadEventsCategory();
 
     @Query("select * from events where id = :id")

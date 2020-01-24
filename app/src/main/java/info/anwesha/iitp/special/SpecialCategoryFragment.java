@@ -13,7 +13,6 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProviders;
-import androidx.navigation.Navigation;
 import androidx.navigation.fragment.NavHostFragment;
 import androidx.preference.PreferenceManager;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
@@ -152,8 +151,8 @@ public class SpecialCategoryFragment extends Fragment implements View.OnClickLis
 
         }
 
-        if (b.containsKey("data")) {
-            Navigation.findNavController(view).navigate(R.id.nav_special_events, b);
-        }
+//        if (b.containsKey("data")) {
+//            Navigation.findNavController(view).navigate(R.id.nav_special_events, b);
+//        }
     }
 }

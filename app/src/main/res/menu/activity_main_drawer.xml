@@ -8,10 +8,6 @@
             android:id="@+id/nav_home"
             android:icon="@drawable/ic_home"
             android:title="Home" />
-<!--        <item-->
-<!--            android:id="@+id/nav_accomodation"-->
-<!--            android:icon="@drawable/ic_business_black_24dp"-->
-<!--            android:title="Book Accomodation"/>-->
 
         <!--<item
             android:id="@+id/nav_theme"
@@ -29,6 +25,11 @@
             android:title="Events" />
 
         <item
+            android:id="@+id/nav_competition"
+            android:icon="@drawable/ic_competition"
+            android:title="Competition" />
+
+        <item
             android:id="@+id/nav_ongoing"
             android:icon="@drawable/ic_ongoing"
             android:title="Live Feed" />
@@ -38,15 +39,10 @@
             android:icon="@drawable/ic_pronite"
             android:title="Pronite" />
 
-        <item
-            android:id="@+id/nav_special_cat"
-            android:icon="@drawable/events_special"
-            android:title="Special Events" />
-
-        <item
-            android:id="@+id/nav_competition"
-            android:icon="@drawable/ic_competition"
-            android:title="Competition"/>
+<!--        <item-->
+<!--            android:id="@+id/nav_special_cat"-->
+<!--            android:icon="@drawable/events_special"-->
+<!--            android:title="Special Events" />-->
 
         <item
             android:id="@+id/nav_gallery"
@@ -68,10 +64,10 @@
             android:icon="@drawable/ic_map"
             android:title="Maps" />
 
-       <!-- <item
-            android:id="@+id/nav_game"
-            android:icon="@drawable/ic_assistant_black_24dp"
-            android:title="Challenge"/>-->
+        <!-- <item
+             android:id="@+id/nav_game"
+             android:icon="@drawable/ic_assistant_black_24dp"
+             android:title="Challenge"/>-->
 
         <item
             android:id="@+id/nav_developers"

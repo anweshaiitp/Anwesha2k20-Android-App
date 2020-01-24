@@ -86,12 +86,9 @@ public class EventsFragment extends Fragment {
     private void observeAll() {
         viewModel.loadAllEvents().observe(this, eventItems -> {
             List<info.anwesha.iitp.events.EventItem> newList = new ArrayList<>();
-            List<info.anwesha.iitp.events.EventItem> testList = new ArrayList<>();
             for (info.anwesha.iitp.events.EventItem n : eventItems) {
-                testList.add(n);
                 if (n.getEvCategory().equals(category)) newList.add(n);
             }
-            Log.d("KHANKi",testList.toString());
             adapter.setEventItemList(newList);
         });
 
