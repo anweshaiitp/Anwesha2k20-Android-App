@@ -535,7 +535,8 @@
             app:cardBackgroundColor="@color/event_detail_card_background"
             app:cardCornerRadius="16dp"
             app:cardElevation="0dp"
-            app:contentPadding="4dp">
+            app:contentPadding="4dp"
+            android:visibility="gone">
 
             <TextView
                 android:layout_width="match_parent"
@@ -552,7 +553,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp">
+            android:layout_margin="16dp"
+            android:visibility="gone">
 
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="120dp"
@@ -630,7 +632,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp">
+            android:layout_margin="16dp"
+            android:visibility="gone">
 
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="120dp"
@@ -709,7 +712,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp">
+            android:layout_margin="16dp"
+            android:visibility="gone">
 
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="120dp"
@@ -804,7 +808,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp">
+            android:layout_margin="16dp"
+            android:visibility="gone">
 
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="120dp"
@@ -899,7 +904,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp">
+            android:layout_margin="16dp"
+            android:visibility="gone">
 
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="120dp"

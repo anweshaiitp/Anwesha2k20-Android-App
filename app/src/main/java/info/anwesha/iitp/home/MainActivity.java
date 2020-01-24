@@ -182,7 +182,7 @@ public class MainActivity extends AppCompatActivity implements EventsRecyclerAda
             String IITP = prefs.getString("college_name", "");
             ((TextView) v.findViewById(R.id.iitp)).setText(IITP.isEmpty() ? "    IIT Patna" : name);
             String id = prefs.getString("celesta_id", "");
-            ((TextView) v.findViewById(R.id.celesta_id)).setText(id.isEmpty() ? str : id);
+            ((TextView) v.findViewById(R.id.anwesha_id)).setText(id.isEmpty() ? str : id);
             ImageView profileImage = v.findViewById(R.id.image);
             Glide.with(this)
                     .load(prefs.getString("qr_code", ""))

@@ -28,7 +28,7 @@
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="16dp"
             android:layout_weight="1"
-            android:gravity="center_vertical"
+            android:gravity="left"
             android:orientation="vertical">
 
             <TextView
@@ -38,8 +38,8 @@
                 android:padding="3dp"
                 android:textColor="@color/white"
                 android:maxLines="1"
-                android:textSize="14sp"
-                android:text="Aman Jee" />
+                android:textSize="16sp"
+                android:text="Somenath Sarkar" />
 
             <TextView
                 android:id="@+id/iitp"
@@ -48,17 +48,17 @@
                 android:padding="3dp"
                 android:textColor="@color/white"
                 android:maxLines="1"
-                android:textSize="12sp"
-                android:text="June080601" />
+                android:textSize="14sp"
+                android:text="Sep14" />
 
             <TextView
-                android:id="@+id/celesta_id"
+                android:id="@+id/anwesha_id"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="3dp"
-                android:textSize="12sp"
+                android:textSize="14sp"
                 android:textColor="@color/white"
-                android:text="CLST3362" />
+                android:text="ANW2500" />
 
 
         </LinearLayout>

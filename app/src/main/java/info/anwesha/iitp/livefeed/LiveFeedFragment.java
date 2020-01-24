@@ -75,6 +75,7 @@ public class LiveFeedFragment extends Fragment {
                 if (response.isSuccessful() && response.body() != null) {
                     adapter.setNewsLists(response.body().getNewsLists());
                 } else {
+                    Log.e("Error", "onResponse Else: " + response.body());
                     Toast.makeText(getContext(), "Something went wrong!!!", Toast.LENGTH_LONG).show();
                 }
             }
