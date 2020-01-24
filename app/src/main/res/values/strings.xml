@@ -19,17 +19,9 @@
     <string name="referral_id_optional">Referral ID (optional)</string>
     <string name="gender_m_or_f">Gender (m or f)</string>
     <string name="register">Register</string>
-    <string-array name="days_array">
-        <item> None</item>
-        <item> Day 1</item>
-        <item> Day 2</item>
-        <item> Day 3</item>
-        <item> Day 1 and Day 2</item>
-        <item> Day 2 and Day 3</item>
-    </string-array>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="backend_amp_web_developers"><![CDATA[Backend & Web Developers]]></string>
     <string name="ashwani_yadav">Ashwani Yadav</string>
     <string name="amartya_mondal">Amartya Mondal</string>
@@ -45,5 +37,13 @@
     <string name="mehuli_pal">Mehuli Pal</string>
     <string name="vs_subhang">VS Subhang</string>
     <string name="img">img</string>
+    <string-array name="days_array">
+        <item> None</item>
+        <item> Day 1</item>
+        <item> Day 2</item>
+        <item> Day 3</item>
+        <item> Day 1 and Day 2</item>
+        <item> Day 2 and Day 3</item>
+    </string-array>
 
 </resources>
