@@ -68,10 +68,10 @@
             android:icon="@drawable/ic_map"
             android:title="Maps" />
 
-        <item
+       <!-- <item
             android:id="@+id/nav_game"
             android:icon="@drawable/ic_assistant_black_24dp"
-            android:title="Challenge"/>
+            android:title="Challenge"/>-->
 
         <item
             android:id="@+id/nav_developers"

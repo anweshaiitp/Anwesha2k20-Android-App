@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity implements EventsRecyclerAda
 
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_home, R.id.nav_events_cat, R.id.nav_pronite, R.id.nav_special_cat,
-                R.id.nav_gallery, R.id.nav_team, R.id.nav_sponsors, R.id.nav_maps, R.id.nav_developers, R.id.nav_account, R.id.nav_accomodation, R.id.nav_game,R.id.option_contact)
+                R.id.nav_gallery, R.id.nav_team, R.id.nav_sponsors, R.id.nav_maps, R.id.nav_developers, R.id.nav_account, R.id.nav_accomodation,R.id.option_contact)
                 .setDrawerLayout(drawer)
                 .build();
 

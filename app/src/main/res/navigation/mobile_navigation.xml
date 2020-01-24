@@ -32,11 +32,11 @@
         android:label="Pronite"
         tools:layout="@layout/fragment_pronite" />
 
-    <fragment
+    <!--<fragment
         android:id="@+id/nav_game"
         android:name="info.anwesha.iitp.game.GameFragment"
         android:label="Challenging Game"
-        tools:layout="@layout/fragment_game" />
+        tools:layout="@layout/fragment_game" />-->
     <fragment
         android:id="@+id/nav_special_cat"
         android:name="info.anwesha.iitp.special.SpecialCategoryFragment"
