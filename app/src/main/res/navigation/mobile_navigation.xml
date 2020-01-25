@@ -78,7 +78,7 @@
     <fragment
         android:id="@+id/nav_ongoing"
         android:name="info.anwesha.iitp.livefeed.LiveFeedFragment"
-        android:label="News Feed"
+        android:label="Live Feed"
         tools:layout="@layout/fragment_events" />
 
     <fragment

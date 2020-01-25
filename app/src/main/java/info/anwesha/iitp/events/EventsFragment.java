@@ -65,9 +65,30 @@ public class EventsFragment extends Fragment {
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-
+        String new_show="Test";
         if (getActivity() != null)
-            ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle(category + " Events");
+        {
+            if(category.equals("awelfare"))
+                new_show="Arts and Welfare";
+            else
+            if(category.equals("cultural"))
+                new_show="Cultural";
+            else
+            if(category.equals("technical"))
+                new_show="Technical";
+            else
+            if(category.equals("proshow"))
+                new_show="Proshow";
+            else
+            if(category.equals("pronite"))
+                new_show="Pronite";
+            else
+            if(category.equals("pre-anwesha"))
+                new_show="Pre-Anwesha";
+            else
+            if(category.equals("informal"))
+                new_show="Informal";
+            ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle(new_show + " Events");}
 
         swipeRefreshLayout = view.findViewById(R.id.swipe_refresh_events);
         swipeRefreshLayout.setOnRefreshListener(this::updateData);
