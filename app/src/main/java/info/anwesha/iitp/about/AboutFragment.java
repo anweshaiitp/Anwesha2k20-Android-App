@@ -45,7 +45,7 @@ public class AboutFragment extends Fragment implements View.OnClickListener {
 
         ImageView image1 = view.findViewById(R.id.image1);
         ImageView image2 = view.findViewById(R.id.image2);
-        //ImageView image3 = view.findViewById(R.id.image3);
+        ImageView image3 = view.findViewById(R.id.image3);
         ImageView image4 = view.findViewById(R.id.image4);
         ImageView image5 = view.findViewById(R.id.image5);
         ImageView image6 = view.findViewById(R.id.image6);
@@ -120,9 +120,10 @@ public class AboutFragment extends Fragment implements View.OnClickListener {
 
         Glide.with(context).load("https://avatars2.githubusercontent.com/u/40834245?s=460&v=4")
                 .placeholder(R.mipmap.anwesha_icon_round).into(image2);
-        //Glide.with(context).load("https://scontent.fdel29-1.fna.fbcdn.net/v/t1.0-9/61836104_1185350021642288_3218647400700706816_n.jpg?_nc_cat=102&_nc_oc=AQks_Avrh-QmlQFcHGi2ug38TMWNY4xy6qpFT8fxfz451NDS3ahAIUOVwKIbn-O6KmE&_nc_ht=scontent.fdel29-1.fna&oh=ba5d514048981767bdc4b4c909b6708a&oe=5E35BDD7")
-          //      .placeholder(R.mipmap.anwesha_icon_round).into(image3);
 
+
+        Glide.with(context).load("http://anwesha.info/images/app/team/subhang.jpg")
+              .placeholder(R.mipmap.anwesha_icon_round).into(image3);
 
 
         Glide.with(context).load("https://scontent.fpat1-1.fna.fbcdn.net/v/t1.0-9/p960x960/81445064_2210647695907368_5005389852087156736_o.jpg?_nc_cat=102&_nc_ohc=Lph1sLQZf4cAQlaU9t4HrKLfnlufTTAbATMgGozV5_ffd5FqeBI1cr_jg&_nc_ht=scontent.fpat1-1.fna&oh=22884030cdb2cd9d39accd26e6c5307d&oe=5EA9F98C")
