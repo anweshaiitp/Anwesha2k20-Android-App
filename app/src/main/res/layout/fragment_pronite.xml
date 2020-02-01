@@ -25,21 +25,21 @@
 
                 <ImageView
                     android:id="@+id/poster"
-                    android:src="@drawable/kk"
                     android:layout_width="match_parent"
-                    android:layout_height="250dp" />
+                    android:layout_height="250dp"
+                    android:src="@drawable/kk" />
 
                 <TextView
                     android:id="@+id/name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
-                    android:textColor="@color/team_text"
                     android:gravity="center"
                     android:padding="12dp"
-                    android:textStyle="bold"
+                    android:text="KK"
+                    android:textColor="@color/team_text"
                     android:textSize="20sp"
-                    android:text="KK" />
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -84,40 +84,12 @@ Anwesha'20 brings to you, performing first time in Patna!!The one and only, magi
                 android:orientation="vertical"
                 android:padding="8dp">
 
-                <TextView
-                    android:id="@+id/date"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="8dp"
-                    android:text="Date : 09-02-2020"
-                    android:textColor="@color/team_text"
-                    android:textSize="18sp" />
-
-                <TextView
-                    android:id="@+id/time"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="8dp"
-                    android:text="Timing : 9:00 PM  -  11:00 PM"
-                    android:textColor="@color/team_text"
-                    android:textSize="18sp" />
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:orientation="horizontal">
 
-
-                    <TextView
-                        android:id="@+id/venue"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:padding="8dp"
-                        android:text="Location : Main Stage"
-                        android:textColor="@color/team_text"
-                        android:textSize="18sp" />
 
                     <ImageButton
                         android:id="@+id/button_map"
@@ -129,7 +101,35 @@ Anwesha'20 brings to you, performing first time in Patna!!The one and only, magi
                         android:src="@drawable/ic_map"
                         android:tint="@color/team_text" />
 
+                    <TextView
+                        android:id="@+id/venue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="8dp"
+                        android:text="Location : Main Stage"
+                        android:textColor="@color/team_text"
+                        android:textSize="18sp" />
+
                 </LinearLayout>
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="Timing : 9:00 PM  -  11:00 PM"
+                    android:textColor="@color/team_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="Date : 09-02-2020"
+                    android:textColor="@color/team_text"
+                    android:textSize="18sp" />
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -142,21 +142,11 @@ Anwesha'20 brings to you, performing first time in Patna!!The one and only, magi
             app:cardBackgroundColor="@color/team_page_background"
             app:cardCornerRadius="8dp">
 
-            <!--<LinearLayout
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:padding="8dp">
-
-                <TextView
-                    android:id="@+id/organisers"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:padding="8dp"
-                    android:text="Organiser : Priyansh Singh Rao"
-                    android:textColor="@color/team_text"
-                    android:textSize="18sp" />
 
                 <ImageView
                     android:id="@+id/organiser_phone"
@@ -167,18 +157,28 @@ Anwesha'20 brings to you, performing first time in Patna!!The one and only, magi
                     android:src="@drawable/ic_local_phone_black_24dp"
                     android:tint="@color/team_text" />
 
-            </LinearLayout>-->
+                <TextView
+                    android:id="@+id/organisers"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:text="Organiser : Himanshu Gupta"
+                    android:textColor="@color/team_text"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
 
         </androidx.cardview.widget.CardView>
 
-        <!--        <com.google.android.material.button.MaterialButton-->
-        <!--            android:id="@+id/button_register"-->
-        <!--            android:layout_width="wrap_content"-->
-        <!--            android:layout_height="wrap_content"-->
-        <!--            android:layout_gravity="center"-->
-        <!--            android:padding="16dp"-->
-        <!--            android:text="Included with Celesta registration"-->
-        <!--            app:backgroundTint="@color/event_detail_card_background" />-->
+<!--        <com.google.android.material.button.MaterialButton-->
+<!--            android:id="@+id/button_register"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:padding="16dp"-->
+<!--            android:text="Included with Celesta registration"-->
+<!--            app:backgroundTint="@color/event_detail_card_background" />-->
 
     </LinearLayout>
 

@@ -64,7 +64,6 @@ public class TeamFragment extends Fragment {
         allMembers.add(new info.anwesha.iitp.team.TeamItem("D K Gurjar", "Coordinator - Registrations And Security", "9352052504", "https://www.dontUseFacebook.com", R.drawable.dk));
         allMembers.add(new info.anwesha.iitp.team.TeamItem("Neeraj Paraliya", "Coordinator - Registrations And Security", "0", "https://www.facebook.com/profile.php?id=100013775678152", R.drawable.neeraj));
         allMembers.add(new info.anwesha.iitp.team.TeamItem("Anuj Shastri", "Coordinator - Registrations And Security", "0", "https://www.facebook.com/anuj.shastri.3910", R.drawable.anuj_shastri));
-        
 
         adapter.setTeamItemList(allMembers);
 

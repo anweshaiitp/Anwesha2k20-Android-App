@@ -48,10 +48,17 @@ public class LiveFeedAdapter extends RecyclerView.Adapter<LiveFeedAdapter.ViewHo
             NewsList newsList = newsLists.get(position);
             holder.news.setText(newsList.getNews());
 
-            Glide.with(context)
-                    .load(newsList.getImg())
-                    .thumbnail(Glide.with(context).load(R.raw.load))
-                    .into(holder.img);
+            if (newsList.getImg().equals("")) {
+                Glide.with(context)
+                        .load(R.drawable.logo)
+                        .thumbnail(Glide.with(context).load(R.raw.load))
+                        .into(holder.img);
+            } else {
+                Glide.with(context)
+                        .load(newsList.getImg())
+                        .thumbnail(Glide.with(context).load(R.raw.load))
+                        .into(holder.img);
+            }
         }
     }
 

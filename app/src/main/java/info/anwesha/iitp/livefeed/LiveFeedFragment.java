@@ -49,7 +49,7 @@ public class LiveFeedFragment extends Fragment {
             Toast.makeText(getContext(), "Check your internet connection", Toast.LENGTH_LONG).show();
         else {
             RecyclerView recyclerView = view.findViewById(R.id.recycler_livefeed);
-            recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 2));
+            recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 1));
 
             adapter = new LiveFeedAdapter(getContext());
             recyclerView.setAdapter(adapter);
@@ -60,7 +60,7 @@ public class LiveFeedFragment extends Fragment {
     void getLiveFeedData() {
         progressDialog = new ProgressDialog(getContext());
         progressDialog.setCancelable(false);
-        progressDialog.setMessage("Geting Live Feeds");
+        progressDialog.setMessage("Getting Live Feeds");
         progressDialog.show();
 
         LiveFeedApi liveFeedApi = RetrofitClientInstance.getRetrofitInstance().create(LiveFeedApi.class);
