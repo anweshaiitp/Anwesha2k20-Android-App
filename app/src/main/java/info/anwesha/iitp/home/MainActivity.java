@@ -88,7 +88,6 @@ public class MainActivity extends AppCompatActivity implements EventsRecyclerAda
 
         FirebaseMessaging.getInstance().subscribeToTopic("all");
         FirebaseMessaging.getInstance().subscribeToTopic("dev");
-        FirebaseMessaging.getInstance().subscribeToTopic("test");
 
         populateHeaderView();
     }
