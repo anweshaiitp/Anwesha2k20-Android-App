@@ -64,6 +64,12 @@
             android:icon="@drawable/ic_map"
             android:title="Maps" />
 
+        <item
+            android:id="@+id/nav_event_schedule"
+            android:icon="@drawable/ic_timer_black_24dp"
+            android:title="Events' Schedule" />
+
+
         <!-- <item
              android:id="@+id/nav_game"
              android:icon="@drawable/ic_assistant_black_24dp"

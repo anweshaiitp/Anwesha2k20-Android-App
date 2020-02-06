@@ -44,8 +44,6 @@ public class ContactFragment extends Fragment implements View.OnClickListener {
         youtube.setOnClickListener(this);
         link.setOnClickListener(this);
         bus.setOnClickListener(this);
-
-
         super.onViewCreated(view, savedInstanceState);
     }
 
@@ -56,7 +54,7 @@ public class ContactFragment extends Fragment implements View.OnClickListener {
 
         switch (id) {
             case R.id.bus_schedule:
-                info.anwesha.iitp.utils.IntentUtils.openWebBrowser(context, "https://www.iitp.ac.in/index.php?option=com_content&view=article&id=60&Itemid=66");
+                info.anwesha.iitp.utils.IntentUtils.openWebBrowser(context, "http://anwesha.info/gallery/bus.pdf");
                 break;
             case R.id.connect_facebook:
                 info.anwesha.iitp.utils.IntentUtils.openWebBrowser(context, "https://m.facebook.com/anwesha.iitpatna/");
