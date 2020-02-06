@@ -56,7 +56,6 @@ public class SpecialEventsFragment extends Fragment {
             this.context = getContext();
         else
             NavHostFragment.findNavController(this).navigateUp();
-
         setEnterTransition(TransitionInflater.from(context).inflateTransition(android.R.transition.fade));
     }
 

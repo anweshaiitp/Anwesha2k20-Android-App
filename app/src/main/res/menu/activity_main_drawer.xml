@@ -9,29 +9,40 @@
             android:icon="@drawable/ic_home"
             android:title="Home" />
 
-        <item
+        <!--<item
             android:id="@+id/nav_theme"
             android:icon="@drawable/ic_theme_black_24dp"
             android:title="Theme" />
+
+        <item
+            android:id="@+id/afterMovie"
+            android:icon="@drawable/ic_aftermovie"
+            android:title="After Movie"/>-->
+
         <item
             android:id="@+id/nav_events_cat"
             android:icon="@drawable/events_icon_2"
             android:title="Events" />
 
         <item
+            android:id="@+id/nav_competition"
+            android:icon="@drawable/ic_competition"
+            android:title="Competition" />
+
+        <item
             android:id="@+id/nav_ongoing"
             android:icon="@drawable/ic_ongoing"
-            android:title="Ongoing Events" />
+            android:title="Live Feed" />
 
         <item
             android:id="@+id/nav_pronite"
             android:icon="@drawable/ic_pronite"
             android:title="Pronite" />
 
-        <item
-            android:id="@+id/nav_special_cat"
-            android:icon="@drawable/events_special"
-            android:title="Special Events" />
+<!--        <item-->
+<!--            android:id="@+id/nav_special_cat"-->
+<!--            android:icon="@drawable/events_special"-->
+<!--            android:title="Special Events" />-->
 
         <item
             android:id="@+id/nav_gallery"
@@ -54,14 +65,30 @@
             android:title="Maps" />
 
         <item
+            android:id="@+id/nav_event_schedule"
+            android:icon="@drawable/ic_timer_black_24dp"
+            android:title="Events' Schedule" />
+
+
+        <!-- <item
+             android:id="@+id/nav_game"
+             android:icon="@drawable/ic_assistant_black_24dp"
+             android:title="Challenge"/>-->
+
+        <item
             android:id="@+id/nav_developers"
             android:icon="@drawable/developer_android"
-            android:title="Developers" />
+            android:title="@string/developers" />
+
+        <item
+            android:id="@+id/option_contact"
+            android:icon="@drawable/ic_contact_us"
+            android:title="Contact us" />
 
         <item
             android:id="@+id/nav_account"
             android:icon="@drawable/ic_login"
-            android:title="Login/Register" />
+            android:title="Register" />
 
     </group>
 

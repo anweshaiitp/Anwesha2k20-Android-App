@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,262 +7,264 @@
     android:orientation="vertical"
     tools:context=".Auth.RegisterFragment">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        <WebView
+            android:id="@+id/registerWebView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginEnd="32dp"
-            android:padding="8dp"
-            android:id="@+id/register_image" />
+<!--        <ImageView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="150dp"-->
+<!--            android:layout_marginStart="32dp"-->
+<!--            android:layout_marginTop="32dp"-->
+<!--            android:layout_marginEnd="32dp"-->
+<!--            android:padding="8dp"-->
+<!--            android:src="@drawable/anwesha_logo_long_2"-->
+<!--            android:id="@+id/register_image" />-->
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="8dp"
-            android:hint="First Name"
-            android:textColorHint="@color/white">
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="16dp"-->
+<!--            android:layout_marginRight="16dp"-->
+<!--            android:layout_marginBottom="8dp"-->
+<!--            android:hint="@string/first_name"-->
+<!--            android:textColorHint="@color/registration_page">-->
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/register_first_name_edittext"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="text"
-                android:maxLines="1"
-                android:padding="8dp"
-                android:textColor="@color/white"
-                android:theme="@style/AppTheme.Edittext" />
-        </com.google.android.material.textfield.TextInputLayout>
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:id="@+id/register_first_name_edittext"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:ems="10"-->
+<!--                android:inputType="text"-->
+<!--                android:maxLines="1"-->
+<!--                android:padding="8dp"-->
+<!--                android:textColor="@color/registration_page"-->
+<!--                android:theme="@style/AppTheme.Edittext" />-->
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="8dp"
-            android:hint="Last Name"
-            android:textColorHint="@color/white">
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="16dp"-->
+<!--            android:layout_marginRight="16dp"-->
+<!--            android:layout_marginBottom="8dp"-->
+<!--            android:hint="@string/last_name"-->
+<!--            android:textColorHint="@color/registration_page">-->
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/register_last_name_edittext"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="text"
-                android:maxLines="1"
-                android:padding="8dp"
-                android:textColor="@color/white"
-                android:theme="@style/AppTheme.Edittext" />
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:id="@+id/register_last_name_edittext"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:ems="10"-->
+<!--                android:inputType="text"-->
+<!--                android:maxLines="1"-->
+<!--                android:padding="8dp"-->
+<!--                android:textColor="@color/registration_page"-->
+<!--                android:theme="@style/AppTheme.Edittext" />-->
 
-        </com.google.android.material.textfield.TextInputLayout>
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="8dp"
-            android:hint="Phone Number"
-            android:textColorHint="@color/white">
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="16dp"-->
+<!--            android:layout_marginRight="16dp"-->
+<!--            android:layout_marginBottom="8dp"-->
+<!--            android:hint="@string/phone_number"-->
+<!--            android:textColorHint="@color/registration_page">-->
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/register_phone_edittext"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="number"
-                android:maxLines="1"
-                android:padding="8dp"
-                android:textColor="@color/white"
-                android:theme="@style/AppTheme.Edittext" />
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:id="@+id/register_phone_edittext"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:ems="10"-->
+<!--                android:inputType="number"-->
+<!--                android:maxLines="1"-->
+<!--                android:padding="8dp"-->
+<!--                android:textColor="@color/registration_page"-->
+<!--                android:theme="@style/AppTheme.Edittext" />-->
 
-        </com.google.android.material.textfield.TextInputLayout>
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="8dp"
-            android:hint="School/College"
-            android:textColorHint="@color/white">
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="16dp"-->
+<!--            android:layout_marginRight="16dp"-->
+<!--            android:layout_marginBottom="8dp"-->
+<!--            android:hint="@string/school_college"-->
+<!--            android:textColorHint="@color/registration_page">-->
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/register_school_college_edittext"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="text"
-                android:maxLines="1"
-                android:padding="8dp"
-                android:textColor="@color/white"
-                android:theme="@style/AppTheme.Edittext" />
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:id="@+id/register_school_college_edittext"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:ems="10"-->
+<!--                android:inputType="text"-->
+<!--                android:maxLines="1"-->
+<!--                android:padding="8dp"-->
+<!--                android:textColor="@color/registration_page"-->
+<!--                android:theme="@style/AppTheme.Edittext" />-->
 
-        </com.google.android.material.textfield.TextInputLayout>
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="8dp"
-            android:hint="Email Address"
-            android:textColorHint="@color/white">
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="16dp"-->
+<!--            android:layout_marginRight="16dp"-->
+<!--            android:layout_marginBottom="8dp"-->
+<!--            android:hint="@string/email_address"-->
+<!--            android:textColorHint="@color/registration_page">-->
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/register_email_edittext"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="textEmailAddress"
-                android:maxLines="1"
-                android:padding="8dp"
-                android:textColor="@color/white"
-                android:theme="@style/AppTheme.Edittext" />
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:id="@+id/register_email_edittext"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:ems="10"-->
+<!--                android:inputType="textEmailAddress"-->
+<!--                android:maxLines="1"-->
+<!--                android:padding="8dp"-->
+<!--                android:textColor="@color/registration_page"-->
+<!--                android:theme="@style/AppTheme.Edittext" />-->
 
-        </com.google.android.material.textfield.TextInputLayout>
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="8dp"
-            android:hint="Password"
-            android:textColorHint="@color/white"
-            app:passwordToggleEnabled="true"
-            app:passwordToggleTint="@color/white">
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="16dp"-->
+<!--            android:layout_marginRight="16dp"-->
+<!--            android:layout_marginBottom="8dp"-->
+<!--            android:hint="@string/password"-->
+<!--            android:textColorHint="@color/registration_page"-->
+<!--            app:passwordToggleEnabled="true"-->
+<!--            app:passwordToggleTint="@color/registration_page">-->
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/register_password_edittext"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="textPassword"
-                android:maxLines="1"
-                android:padding="8dp"
-                android:textColor="@color/white"
-                android:theme="@style/AppTheme.Edittext" />
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:id="@+id/register_password_edittext"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:ems="10"-->
+<!--                android:inputType="textPassword"-->
+<!--                android:maxLines="1"-->
+<!--                android:padding="8dp"-->
+<!--                android:textColor="@color/registration_page"-->
+<!--                android:theme="@style/AppTheme.Edittext" />-->
 
-        </com.google.android.material.textfield.TextInputLayout>
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="8dp"
-            android:hint="Confirm Password"
-            android:textColorHint="@color/white"
-            app:passwordToggleEnabled="true"
-            app:passwordToggleTint="@color/white">
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="16dp"-->
+<!--            android:layout_marginRight="16dp"-->
+<!--            android:layout_marginBottom="8dp"-->
+<!--            android:hint="@string/confirm_password"-->
+<!--            android:textColorHint="@color/registration_page"-->
+<!--            app:passwordToggleEnabled="true"-->
+<!--            app:passwordToggleTint="@color/registration_page">-->
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/register_confirm_password_edittext"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="textPassword"
-                android:maxLines="1"
-                android:padding="8dp"
-                android:textColor="@color/white"
-                android:theme="@style/AppTheme.Edittext" />
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:id="@+id/register_confirm_password_edittext"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:ems="10"-->
+<!--                android:inputType="textPassword"-->
+<!--                android:maxLines="1"-->
+<!--                android:padding="8dp"-->
+<!--                android:textColor="@color/registration_page"-->
+<!--                android:theme="@style/AppTheme.Edittext" />-->
 
-        </com.google.android.material.textfield.TextInputLayout>
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="8dp"
-            android:hint="Referral ID (optional)"
-            android:textColorHint="@color/white">
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="16dp"-->
+<!--            android:layout_marginRight="16dp"-->
+<!--            android:layout_marginBottom="8dp"-->
+<!--            android:hint="@string/referral_id_optional"-->
+<!--            android:textColorHint="@color/registration_page">-->
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/register_referral_edittext"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="text"
-                android:maxLines="1"
-                android:padding="8dp"
-                android:textColor="@color/white"
-                android:theme="@style/AppTheme.Edittext" />
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:id="@+id/register_referral_edittext"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:ems="10"-->
+<!--                android:inputType="text"-->
+<!--                android:maxLines="1"-->
+<!--                android:padding="8dp"-->
+<!--                android:textColor="@color/registration_page"-->
+<!--                android:theme="@style/AppTheme.Edittext" />-->
 
-        </com.google.android.material.textfield.TextInputLayout>
-
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="8dp"
-            android:hint="Gender (m or f)"
-            android:textColorHint="@color/white">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/register_gender_edittext"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="text"
-                android:maxLines="1"
-                android:padding="8dp"
-                android:textColor="@color/white"
-                android:theme="@style/AppTheme.Edittext" />
-
-        </com.google.android.material.textfield.TextInputLayout>
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
 
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/register_button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="32dp"
-            android:layout_marginBottom="16dp"
-            android:padding="8dp"
-            android:text="Register"
-            android:textColor="@color/white" />
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="16dp"-->
+<!--            android:layout_marginRight="16dp"-->
+<!--            android:layout_marginBottom="8dp"-->
+<!--            android:hint="@string/gender_m_or_f"-->
+<!--            android:textColorHint="@color/registration_page">-->
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:orientation="horizontal">
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:id="@+id/register_gender_edittext"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:ems="10"-->
+<!--                android:inputType="text"-->
+<!--                android:maxLines="1"-->
+<!--                android:padding="8dp"-->
+<!--                android:textColor="@color/registration_page"-->
+<!--                android:theme="@style/AppTheme.Edittext" />-->
 
-            <androidx.appcompat.widget.AppCompatTextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="4dp"
-                android:layout_weight="1"
-                android:gravity="end"
-                android:text="Have An Account?"
-                android:textColor="@color/darkGray"
-                android:textSize="16sp" />
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
 
-            <androidx.appcompat.widget.AppCompatTextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="4dp"
-                android:layout_weight="1"
-                android:gravity="start"
-                android:text="Login Now"
-                android:textColor="@color/colorAccent"
-                android:textSize="16sp"
-                android:id="@+id/login_textview"/>
 
-        </LinearLayout>
-    </LinearLayout>
-</ScrollView>
+<!--        <com.google.android.material.button.MaterialButton-->
+<!--            android:id="@+id/register_button"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="32dp"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:layout_marginEnd="32dp"-->
+<!--            android:layout_marginBottom="16dp"-->
+<!--            android:padding="8dp"-->
+<!--            android:backgroundTint="@color/registration_page"-->
+<!--            android:text="@string/register"-->
+<!--            android:textColor="#654321" />-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center_horizontal"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <androidx.appcompat.widget.AppCompatTextView-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="4dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="end"-->
+<!--                android:text="@string/have_an_account"-->
+<!--                android:textColor="@color/registration_page"-->
+<!--                android:textSize="16sp" />-->
+
+<!--            <androidx.appcompat.widget.AppCompatTextView-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="4dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="start"-->
+<!--                android:text="@string/login_now"-->
+<!--                android:textColor="#ffffff"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textSize="16sp"-->
+<!--                android:id="@+id/login_textview"/>-->
+
+<!--        </LinearLayout>-->
+</LinearLayout>

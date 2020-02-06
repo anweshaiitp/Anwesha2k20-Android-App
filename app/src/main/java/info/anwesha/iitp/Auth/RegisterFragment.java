@@ -9,17 +9,15 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
 import android.widget.EditText;
-import android.widget.ImageView;
-import android.widget.TextView;
+
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-
-import com.bumptech.glide.Glide;
 
 import java.util.List;
 
@@ -38,6 +36,7 @@ public class RegisterFragment extends Fragment {
     private EditText firstNameInput, lastNameInput, phoneInput, emailInput, collegeInput, passwordInput, confirmPasswordInput, referralInput, genderInput;
     private ProgressDialog progressDialog;
     private Context context;
+    private WebView registerView;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -48,35 +47,48 @@ public class RegisterFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_register, container, false);
+        if (!CheckNetwork.isNetworkConnected(requireContext())) {
+            Toast.makeText(requireContext(), "No Internet Connection!!!", Toast.LENGTH_LONG).show();
+            View rootView = inflater.inflate(R.layout.fragment_no_internet, container, false);
+            return rootView;
+        } else {
+            View rootView = inflater.inflate(R.layout.fragment_register, container, false);
+            return rootView;
+        }
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
-        firstNameInput = view.findViewById(R.id.register_first_name_edittext);
-        lastNameInput = view.findViewById(R.id.register_last_name_edittext);
-        phoneInput = view.findViewById(R.id.register_phone_edittext);
-        emailInput = view.findViewById(R.id.register_email_edittext);
-        collegeInput = view.findViewById(R.id.register_school_college_edittext);
-        passwordInput = view.findViewById(R.id.register_password_edittext);
-        confirmPasswordInput = view.findViewById(R.id.register_confirm_password_edittext);
-        referralInput = view.findViewById(R.id.register_referral_edittext);
-        genderInput = view.findViewById(R.id.register_gender_edittext);
-
-        TextView loginTextView = view.findViewById(R.id.login_textview);
-        loginTextView.setOnClickListener(view12 -> loadFragment(new info.anwesha.iitp.Auth.LoginFragment()));
-
-        ImageView imageView = view.findViewById(R.id.register_image);
-        Glide.with(getContext()).load(R.drawable.celesta_logo_long_2).into(imageView);
-
-        Button registerButton = view.findViewById(R.id.register_button);
-        registerButton.setOnClickListener(view1 -> {
-            if (!CheckNetwork.isNetworkConnected(context))
-                Toast.makeText(getContext(), "Check your internet connection!!!", Toast.LENGTH_LONG).show();
-            else register();
-        });
+        if (!CheckNetwork.isNetworkConnected(requireContext())) {
+            Toast.makeText(requireContext(), "No Internet Connection!!!", Toast.LENGTH_LONG).show();
+        } else {
+            registerView = view.findViewById(R.id.registerWebView);
+            registerView.loadUrl("https://www.townscript.com/e/anwesha-iit-patna-214401");
+            WebSettings webSettings = registerView.getSettings();
+            webSettings.setJavaScriptEnabled(true);
+        }
+//
+//        firstNameInput = view.findViewById(R.id.register_first_name_edittext);
+//        lastNameInput = view.findViewById(R.id.register_last_name_edittext);
+//        phoneInput = view.findViewById(R.id.register_phone_edittext);
+//        emailInput = view.findViewById(R.id.register_email_edittext);
+//        collegeInput = view.findViewById(R.id.register_school_college_edittext);
+//        passwordInput = view.findViewById(R.id.register_password_edittext);
+//        confirmPasswordInput = view.findViewById(R.id.register_confirm_password_edittext);
+//        referralInput = view.findViewById(R.id.register_referral_edittext);
+//        genderInput = view.findViewById(R.id.register_gender_edittext);
+//
+//        TextView loginTextView = view.findViewById(R.id.login_textview);
+//        loginTextView.setOnClickListener(view12 -> loadFragment(new info.anwesha.iitp.Auth.LoginFragment()));
+//
+//
+//        Button registerButton = view.findViewById(R.id.register_button);
+//        registerButton.setOnClickListener(view1 -> {
+//            if (!CheckNetwork.isNetworkConnected(context))
+//                Toast.makeText(getContext(), "Check your internet connection!!!", Toast.LENGTH_LONG).show();
+//            else register();
+//        });
     }
 
     private void loadFragment(Fragment fragment) {

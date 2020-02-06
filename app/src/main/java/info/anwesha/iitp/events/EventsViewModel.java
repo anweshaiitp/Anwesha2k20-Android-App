@@ -13,12 +13,16 @@ public class EventsViewModel extends AndroidViewModel {
     private info.anwesha.iitp.events.EventsRepository eventsRepository;
     private LiveData<List<info.anwesha.iitp.events.EventItem>> allEvents;
     private LiveData<List<String>> allClubs;
+    private LiveData<List<String>> allCompetetions;
+    private LiveData<List<String>> allEventsCategory;
 
     public EventsViewModel(@NonNull Application application) {
         super(application);
         eventsRepository = new EventsRepository(application);
         allEvents = eventsRepository.loadAllEvents();
         allClubs = eventsRepository.loadAllClubs();
+        allCompetetions=eventsRepository.loadCompetetions();
+        allEventsCategory=eventsRepository.loadEventsCategory();
     }
 
     LiveData<List<info.anwesha.iitp.events.EventItem>> loadAllEvents() {
@@ -27,6 +31,14 @@ public class EventsViewModel extends AndroidViewModel {
 
     public LiveData<List<String>> loadAllClubs() {
         return allClubs;
+    }
+
+    public LiveData<List<String>> loadCompetetionsCategory() {
+        return allCompetetions;
+    }
+
+    public LiveData<List<String>> loadEventsCategory() {
+        return allEventsCategory;
     }
 
     public void insert(info.anwesha.iitp.events.EventItem eventItem) {

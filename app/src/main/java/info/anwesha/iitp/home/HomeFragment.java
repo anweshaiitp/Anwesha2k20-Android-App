@@ -1,5 +1,6 @@
 package info.anwesha.iitp.home;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -16,6 +17,9 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 
 import com.bumptech.glide.Glide;
+import com.smarteist.autoimageslider.IndicatorAnimations;
+import com.smarteist.autoimageslider.SliderAnimations;
+import com.smarteist.autoimageslider.SliderView;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -23,6 +27,7 @@ import java.util.Map;
 import info.anwesha.iitp.R;
 
 public class HomeFragment extends Fragment {
+    SliderView sliderView;
 
     public HomeFragment() {
     }
@@ -38,16 +43,16 @@ public class HomeFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
         ImageView imageView = view.findViewById(R.id.main_logo_iv);
-        Glide.with(requireContext()).load(R.drawable.celesta_logo_long_2).into(imageView);
+        sliderView = view.findViewById(R.id.imageSlider);
+
+        Glide.with(requireContext()).load(R.drawable.anwesha_logo_long_2).into(imageView);
 
         Map<Integer, Integer> map = new HashMap<>();
 
         map.put(R.id.main_pronite_ll, R.id.nav_pronite);
         map.put(R.id.main_event_ll, R.id.nav_events_cat);
         map.put(R.id.main_gallery_ll, R.id.nav_gallery);
-        map.put(R.id.main_special_ll, R.id.nav_special_cat);
-        map.put(R.id.main_team_ll, R.id.nav_team);
-        map.put(R.id.main_sponsor_ll, R.id.nav_sponsors);
+        map.put(R.id.main_login_ll, R.id.nav_account);
 
         for (final Map.Entry<Integer, Integer> pair : map.entrySet()) {
             View mainView = view.findViewById(pair.getKey());
@@ -63,6 +68,26 @@ public class HomeFragment extends Fragment {
     }
 
     @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        loadSliderImages();
+    }
+
+    private void loadSliderImages() {
+        SliderAdapterExample adapter = new SliderAdapterExample(requireContext());
+
+        sliderView.setSliderAdapter(adapter);
+
+        sliderView.setIndicatorAnimation(IndicatorAnimations.WORM); //set indicator animation by using SliderLayout.IndicatorAnimations. :WORM or THIN_WORM or COLOR or DROP or FILL or NONE or SCALE or SCALE_DOWN or SLIDE and SWAP!!
+        sliderView.setSliderTransformAnimation(SliderAnimations.SIMPLETRANSFORMATION);
+        sliderView.setAutoCycleDirection(SliderView.AUTO_CYCLE_DIRECTION_BACK_AND_FORTH);
+        sliderView.setIndicatorSelectedColor(Color.WHITE);
+        sliderView.setIndicatorUnselectedColor(Color.GRAY);
+        sliderView.setScrollTimeInSec(4); //set scroll delay in seconds :
+        sliderView.startAutoCycle();
+    }
+
+    @Override
     public void onCreateOptionsMenu(@NonNull Menu menu, @NonNull MenuInflater inflater) {
         if (getActivity() != null)
             getActivity().getMenuInflater().inflate(R.menu.menu_home, menu);
@@ -72,9 +97,9 @@ public class HomeFragment extends Fragment {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
         int id = item.getItemId();
-        if (id == R.id.action_contact) {
+        if (id == R.id.nav_ongoing) {
             NavController navController = Navigation.findNavController(getActivity(), R.id.nav_host_fragment);
-            navController.navigate(R.id.option_contact);
+            navController.navigate(R.id.nav_ongoing);
             return true;
         }
 

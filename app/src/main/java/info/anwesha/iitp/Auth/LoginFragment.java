@@ -68,7 +68,7 @@ public class LoginFragment extends Fragment {
         loginButton = view.findViewById(R.id.login_button);
 
         ImageView imageView = view.findViewById(R.id.login_image);
-        Glide.with(requireContext()).load(R.drawable.celesta_logo_long_2).into(imageView);
+        Glide.with(requireContext()).load(R.drawable.logo).into(imageView);
 
         loginButton.setOnClickListener(view13 -> {
             if (!CheckNetwork.isNetworkConnected(context))

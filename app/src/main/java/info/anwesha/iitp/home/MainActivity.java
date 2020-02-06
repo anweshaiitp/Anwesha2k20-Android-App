@@ -37,9 +37,13 @@ import com.google.android.play.core.install.model.UpdateAvailability;
 import com.google.android.play.core.tasks.Task;
 import com.google.firebase.messaging.FirebaseMessaging;
 
+import java.util.Calendar;
+
+import info.anwesha.iitp.Auth.LoginRegisterActivity;
+
 import info.anwesha.iitp.BuildConfig;
 import info.anwesha.iitp.R;
-import info.anwesha.iitp.Auth.LoginRegisterActivity;
+
 import info.anwesha.iitp.events.EventDetailsFragment;
 import info.anwesha.iitp.events.EventsRecyclerAdapter;
 
@@ -53,14 +57,15 @@ public class MainActivity extends AppCompatActivity implements EventsRecyclerAda
     private NavigationView navigationView;
     private AppUpdateManager appUpdateManager;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getWindow().setBackgroundDrawableResource(R.drawable.back);
         setContentView(R.layout.activity_main);
 
-        prefs = PreferenceManager.getDefaultSharedPreferences(this);
 
+        prefs = PreferenceManager.getDefaultSharedPreferences(this);
         Toolbar toolbar = findViewById(R.id.toolbar);
         toolbar.setTitle("");
         setSupportActionBar(toolbar);
@@ -72,8 +77,8 @@ public class MainActivity extends AppCompatActivity implements EventsRecyclerAda
         navAccount = menu.findItem(R.id.nav_account);
 
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_events_cat, R.id.nav_ongoing, R.id.nav_pronite, R.id.nav_special_cat,
-                R.id.nav_gallery, R.id.nav_team, R.id.nav_sponsors, R.id.nav_maps, R.id.nav_developers, R.id.nav_account)
+                R.id.nav_home, R.id.nav_events_cat, R.id.nav_pronite, R.id.nav_special_cat,
+                R.id.nav_gallery, R.id.nav_team, R.id.nav_sponsors, R.id.nav_maps, R.id.nav_developers, R.id.nav_account, R.id.nav_accomodation,R.id.option_contact, R.id.nav_event_schedule)
                 .setDrawerLayout(drawer)
                 .build();
 
@@ -83,6 +88,9 @@ public class MainActivity extends AppCompatActivity implements EventsRecyclerAda
 
         FirebaseMessaging.getInstance().subscribeToTopic("all");
         FirebaseMessaging.getInstance().subscribeToTopic("dev");
+        FirebaseMessaging.getInstance().subscribeToTopic("test");
+
+        populateHeaderView();
     }
 
 //    private void handleIntent(Intent appLinkIntent) {
@@ -134,33 +142,49 @@ public class MainActivity extends AppCompatActivity implements EventsRecyclerAda
     @Override
     protected void onResume() {
         super.onResume();
-        if (PreferenceManager.getDefaultSharedPreferences(this).getBoolean("login_status", false))
-            navAccount.setTitle("Profile");
-        else navAccount.setTitle("Login/Register");
+//        if (PreferenceManager.getDefaultSharedPreferences(this).getBoolean("login_status", false))
+//            navAccount.setTitle("Profile");
+//        else navAccount.setTitle("Login/Register");
 
         new Handler().postDelayed(this::updateApp, 1000);
     }
 
-    @Override
-    protected void onStart() {
-        super.onStart();
-        new Handler().postDelayed(this::populateHeaderView, 200);
-    }
-
     private void populateHeaderView() {
-
+        Calendar c = Calendar.getInstance();
+        int day = c.get(Calendar.DAY_OF_MONTH);
+        int result, m=1,j,k;
+        String str="";
+        if(day>=24&&day<32)
+        { result = 38-day;
+            str = result + " days to go";
+        }
+        else if(day>=1&&day<7)
+        {
+            result = 7-day;
+            str = result + " days to go";
+        }
+        else if (day == 7)
+            str = "1st day";
+        else if (day == 8)
+            str = "2nd day";
+        else if (day == 9)
+            str = "3rd day";
+        else
+            str = "Meeting next year";
         View v = navigationView.getHeaderView(0);
 
         if (v != null) {
             String name = prefs.getString("first_name", "");
-            ((TextView) v.findViewById(R.id.name)).setText(name.isEmpty() ? "Celesta IITP" : name);
+            ((TextView) v.findViewById(R.id.name)).setText(name.isEmpty() ? " Anwesha " : name);
+            String IITP = prefs.getString("college_name", "");
+            ((TextView) v.findViewById(R.id.iitp)).setText(IITP.isEmpty() ? " IIT Patna " : name);
             String id = prefs.getString("celesta_id", "");
-            ((TextView) v.findViewById(R.id.celesta_id)).setText(id.isEmpty() ? "Guest User" : id);
+            ((TextView) v.findViewById(R.id.anwesha_id)).setText(id.isEmpty() ? str : id);
             ImageView profileImage = v.findViewById(R.id.image);
             Glide.with(this)
                     .load(prefs.getString("qr_code", ""))
                     .centerCrop()
-                    .placeholder(R.mipmap.celesta_icon_round)
+                    .placeholder(R.mipmap.anwesha_icon_round)
                     .into(profileImage);
             profileImage.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, LoginRegisterActivity.class)));
         }

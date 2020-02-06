@@ -4,7 +4,7 @@
         <shape android:shape="rectangle">
             <solid android:color="@color/medBlue"/>
             <!--<stroke android:color="#8A2BE2" android:width="2dp" />-->
-            <!--corners allow us to make the rounded corners button-->
+            <!--corners allow us to make the rounded corners submit_button-->
             <corners android:radius="24dp" />
         </shape>
     </item>

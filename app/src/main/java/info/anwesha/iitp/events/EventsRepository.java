@@ -19,6 +19,8 @@ public class EventsRepository {
     private LiveData<List<info.anwesha.iitp.events.EventItem>> allLectures;
     private LiveData<List<info.anwesha.iitp.events.EventItem>> allWorkshops;
     private LiveData<List<String>> allClubs;
+    private LiveData<List<String>> allCompetetions;
+    private LiveData<List<String>> allEventsCategory;
 
     public EventsRepository(Application application) {
         info.anwesha.iitp.database.AppDatabase db = AppDatabase.getDatabase(application);
@@ -30,6 +32,8 @@ public class EventsRepository {
         allLectures = eventsDao.loadGuestTalks();
         allWorkshops = eventsDao.loadWorkshops();
         allClubs = eventsDao.loadAllClubs();
+        allCompetetions = eventsDao.loadCompetetionsCategory();
+        allEventsCategory=eventsDao.loadEventsCategory();
     }
 
     public LiveData<List<info.anwesha.iitp.events.EventItem>> loadAllEvents() {
@@ -53,6 +57,14 @@ public class EventsRepository {
 
     public LiveData<List<String>> loadAllClubs() {
         return allClubs;
+    }
+
+    public LiveData<List<String>> loadCompetetions() {
+        return allCompetetions;
+    }
+
+    public LiveData<List<String>> loadEventsCategory() {
+        return allEventsCategory;
     }
 
     public void insert(info.anwesha.iitp.events.EventItem eventItem) {

@@ -40,7 +40,27 @@ public class EventsCategoryAdapter extends RecyclerView.Adapter<info.anwesha.iit
         if (categoryList != null) {
             final String current = categoryList.get(position);
 
-            holder.title.setText(current);
+
+            String show="Test";
+            if(current.equals("awelfare")){
+                show="Arts & Welfare";
+            }else if (current.equals("cultural")){
+                show="Cultural";
+            }else if (current.equals("technical")){
+                show="Technical";
+            }
+            else if (current.equals("pronite")){
+                show="Pronite";
+            }
+            else if (current.equals("proshow")){
+                show="Proshow";
+            }
+            else if (current.equals("pre-anwesha")){
+                show="Pre-Anwesha";
+            }else if (current.equals("informal")){
+                show="Informal";
+            }
+            holder.title.setText(show);
 //            Glide.with(context)
 //                    .load(R.raw.gif_abc)
 //                    .centerCrop()

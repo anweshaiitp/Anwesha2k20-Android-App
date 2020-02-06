@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -16,7 +15,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
-            app:cardBackgroundColor="@color/event_detail_card_background"
+            app:cardBackgroundColor="@color/team_page_background"
             app:cardCornerRadius="8dp">
 
             <LinearLayout
@@ -27,7 +26,8 @@
                 <ImageView
                     android:id="@+id/poster"
                     android:layout_width="match_parent"
-                    android:layout_height="250dp" />
+                    android:layout_height="250dp"
+                    android:src="@drawable/kk" />
 
                 <TextView
                     android:id="@+id/name"
@@ -36,9 +36,10 @@
                     android:layout_gravity="bottom"
                     android:gravity="center"
                     android:padding="12dp"
-                    android:textColor="@android:color/white"
+                    android:text="KK"
+                    android:textColor="@color/team_text"
                     android:textSize="20sp"
-                    android:text="Anubhav Singh Bassi" />
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -49,7 +50,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
-            app:cardBackgroundColor="@color/event_detail_card_background"
+            app:cardBackgroundColor="@color/team_page_background"
             app:cardCornerRadius="8dp">
 
             <TextView
@@ -57,8 +58,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="16dp"
-                android:text="A lawyer-turned-UPSC aspirant-turned-entrepreneur-turned-comic, Anubhav Bassi is finally doing something productive after many failures because he thinks that his failures are his achievements. A perfect storyteller who makes fun of himself and everything that has come in his way till date. His style of comedy is interestingly natural with the whole act that seems like a casual conversation with hilarious content. One of the best stand-up comedians of the next gen."
-                android:textColor="@android:color/white"
+                android:text="Hearing the melodies that make your heart sway away from reality, making you fall in the dreamscape of eternity.
+Tu jo mila...! Dil ibadat kar rha h... ! Khuda jane!
+With songs that touch the strings of your heart and make them resonate with the melodies of love, this artists is all set to perfom on the stage of Anwesha this year!
+
+Feel the West Winds, as we set sails to a Journey in the Mist of Memories.
+Anwesha'20 brings to you, performing first time in Patna!!The one and only, magician of melody... THE KK will be going live this Anwesha on 9th February."
+                android:textColor="@color/team_text"
                 android:textSize="18sp" />
 
         </androidx.cardview.widget.CardView>
@@ -68,7 +74,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
-            app:cardBackgroundColor="@color/event_detail_card_background"
+            app:cardBackgroundColor="@color/team_page_background"
             app:cardCornerRadius="8dp">
 
             <LinearLayout
@@ -78,40 +84,12 @@
                 android:orientation="vertical"
                 android:padding="8dp">
 
-                <TextView
-                    android:id="@+id/date"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="8dp"
-                    android:text="Date : 09-11-2019"
-                    android:textColor="@android:color/white"
-                    android:textSize="18sp" />
-
-                <TextView
-                    android:id="@+id/time"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="8dp"
-                    android:text="Timing : 9:00 PM  -  11:00 PM"
-                    android:textColor="@android:color/white"
-                    android:textSize="18sp" />
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:orientation="horizontal">
 
-
-                    <TextView
-                        android:id="@+id/venue"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:padding="8dp"
-                        android:text="Location : Main Stage"
-                        android:textColor="@android:color/white"
-                        android:textSize="18sp" />
 
                     <ImageButton
                         android:id="@+id/button_map"
@@ -121,9 +99,37 @@
                         android:backgroundTint="@color/transparent"
                         android:padding="4dp"
                         android:src="@drawable/ic_map"
-                        android:tint="@color/white" />
+                        android:tint="@color/team_text" />
+
+                    <TextView
+                        android:id="@+id/venue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="8dp"
+                        android:text="Location : Main Stage"
+                        android:textColor="@color/team_text"
+                        android:textSize="18sp" />
 
                 </LinearLayout>
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="Timing : 9:00 PM  -  11:00 PM"
+                    android:textColor="@color/team_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="Date : 09-02-2020"
+                    android:textColor="@color/team_text"
+                    android:textSize="18sp" />
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -133,7 +139,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
-            app:cardBackgroundColor="@color/event_detail_card_background"
+            app:cardBackgroundColor="@color/team_page_background"
             app:cardCornerRadius="8dp">
 
             <LinearLayout
@@ -142,16 +148,6 @@
                 android:orientation="horizontal"
                 android:padding="8dp">
 
-                <TextView
-                    android:id="@+id/organisers"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:padding="8dp"
-                    android:text="Organiser : Priyansh Singh Rao"
-                    android:textColor="@android:color/white"
-                    android:textSize="18sp" />
-
                 <ImageView
                     android:id="@+id/organiser_phone"
                     android:layout_width="40dp"
@@ -159,20 +155,30 @@
                     android:layout_gravity="center_vertical"
                     android:padding="6dp"
                     android:src="@drawable/ic_local_phone_black_24dp"
-                    android:tint="@color/white" />
+                    android:tint="@color/team_text" />
+
+                <TextView
+                    android:id="@+id/organisers"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:text="Organiser : Himanshu Gupta"
+                    android:textColor="@color/team_text"
+                    android:textSize="18sp" />
 
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/button_register"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:padding="16dp"
-            android:text="Included with Celesta registration"
-            app:backgroundTint="@color/event_detail_card_background" />
+<!--        <com.google.android.material.button.MaterialButton-->
+<!--            android:id="@+id/button_register"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:padding="16dp"-->
+<!--            android:text="Included with Celesta registration"-->
+<!--            app:backgroundTint="@color/event_detail_card_background" />-->
 
     </LinearLayout>
 

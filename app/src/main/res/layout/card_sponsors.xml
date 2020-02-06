@@ -4,37 +4,86 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/cv_sponsors"
     android:layout_width="match_parent"
-    android:layout_height="150dp"
+    android:layout_height="wrap_content"
     android:layout_margin="8dp"
-    app:cardBackgroundColor="@color/transparent"
+    app:cardBackgroundColor="@color/team_page_background"
     app:cardCornerRadius="8dp"
     app:strokeColor="@color/navigation_background"
     app:strokeWidth="1dp">
 
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
-        <ImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/image"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:outlineProvider="paddedBounds"
-            tools:src="@drawable/bihartourism" />
+            android:layout_width="100dp"
+            android:layout_height="104dp"
+            android:layout_gravity="center"
+            android:padding="8dp"
+            tools:src="@drawable/deepanjan_c1" />
 
-        <TextView
-            android:id="@+id/name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:textColor="@android:color/white"
-            android:padding="4dp"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            tools:text="Associate Sponsor" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="Parth Kulkarni"
+                android:textColor="@color/team_text"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:text="hhduhddjhbjhsjsgfhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh" />
+
+            <TextView
+                android:id="@+id/sponsor_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/team_text"
+                android:textStyle="bold"
+                tools:text="Fest Convener" />
+
+        </LinearLayout>
 
     </LinearLayout>
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:orientation="vertical">-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/image"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="0dp"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:outlineProvider="paddedBounds"-->
+    <!--            tools:src="@drawable/bihartourism" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/name"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:gravity="center"-->
+    <!--            android:textColor="@android:color/white"-->
+    <!--            android:padding="4dp"-->
+    <!--            android:textSize="16sp"-->
+    <!--            android:textStyle="bold"-->
+    <!--            tools:text="Associate Sponsor" />-->
+
+    <!--    </LinearLayout>-->
 
 </com.google.android.material.card.MaterialCardView>

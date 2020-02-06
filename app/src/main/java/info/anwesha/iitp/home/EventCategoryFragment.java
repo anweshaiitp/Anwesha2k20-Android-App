@@ -25,7 +25,6 @@ import java.util.List;
 import info.anwesha.iitp.R;
 import info.anwesha.iitp.events.EventItem;
 import info.anwesha.iitp.events.EventsViewModel;
-import info.anwesha.iitp.home.EventsCategoryAdapter;
 import info.anwesha.iitp.network.EventsRoutes;
 import info.anwesha.iitp.network.RetrofitClientInstance;
 import retrofit2.Call;
@@ -45,11 +44,17 @@ public class EventCategoryFragment extends Fragment {
     private View emptyView;
     private SharedPreferences preferences;
 
+    String types;
+
     private Context context;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        if (getArguments() != null) {
+            types = String.valueOf(getArguments().getString("type"));
+        }
         setEnterTransition(TransitionInflater.from(requireContext()).inflateTransition(android.R.transition.fade));
         viewModel = ViewModelProviders.of(this).get(EventsViewModel.class);
         if (getContext() != null)
@@ -90,24 +95,47 @@ public class EventCategoryFragment extends Fragment {
     }
 
     private void observeAll() {
-        viewModel.loadAllClubs().observe(this, strings -> {
 
-            List<String> temp = new ArrayList<>();
+        if (types.equals("events")) {
+            viewModel.loadEventsCategory().observe(this, strings -> {
 
-            for (String s : strings)
-                if (!temp.contains(s))
-                    temp.add(s);
+                List<String> temp = new ArrayList<>();
 
-            adapter.setEventCategoryList(temp);
+                for (String s : strings)
+                    if (!temp.contains(s))
+                        temp.add(s);
 
-            if (strings.size() == 0) {
-                recyclerView.setVisibility(View.INVISIBLE);
-                emptyView.setVisibility(View.VISIBLE);
-            } else {
-                recyclerView.setVisibility(View.VISIBLE);
-                emptyView.setVisibility(View.INVISIBLE);
-            }
-        });
+                adapter.setEventCategoryList(temp);
+
+                if (strings.size() == 0) {
+                    recyclerView.setVisibility(View.INVISIBLE);
+                    emptyView.setVisibility(View.VISIBLE);
+                } else {
+                    recyclerView.setVisibility(View.VISIBLE);
+                    emptyView.setVisibility(View.INVISIBLE);
+                }
+            });
+        } else {
+            viewModel.loadCompetetionsCategory().observe(this, strings -> {
+
+                List<String> temp = new ArrayList<>();
+
+                for (String s : strings)
+                    if (!temp.contains(s))
+                        temp.add(s);
+
+                adapter.setEventCategoryList(temp);
+
+                if (strings.size() == 0) {
+                    recyclerView.setVisibility(View.INVISIBLE);
+                    emptyView.setVisibility(View.VISIBLE);
+                } else {
+                    recyclerView.setVisibility(View.VISIBLE);
+                    emptyView.setVisibility(View.INVISIBLE);
+                }
+            });
+        }
+
     }
 
     private void updateData() {

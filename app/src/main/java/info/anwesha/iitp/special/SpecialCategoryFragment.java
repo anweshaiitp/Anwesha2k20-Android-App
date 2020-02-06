@@ -13,7 +13,6 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProviders;
-import androidx.navigation.Navigation;
 import androidx.navigation.fragment.NavHostFragment;
 import androidx.preference.PreferenceManager;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
@@ -56,17 +55,17 @@ public class SpecialCategoryFragment extends Fragment implements View.OnClickLis
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_special_category, container, false);
+        return inflater.inflate(R.layout.fragment_event_category, container, false);
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
 
         swipeRefreshLayout = view.findViewById(R.id.swipe_refresh_event_cat);
-        swipeRefreshLayout.setOnRefreshListener(this::updateData);
+//        swipeRefreshLayout.setOnRefreshListener(this::updateData);
 
         if (preferences.getLong("last_event_update_time", 0) < System.currentTimeMillis() - 10 * 60 * 1000) {
-            swipeRefreshLayout.setRefreshing(true);
+//            swipeRefreshLayout.setRefreshing(true);
             updateData();
         }
 
@@ -76,11 +75,11 @@ public class SpecialCategoryFragment extends Fragment implements View.OnClickLis
         MaterialCardView workshops = view.findViewById(R.id.card_workshops);
         MaterialCardView ozone = view.findViewById(R.id.card_ozone);
 
-        schoolEvents.setOnClickListener(this);
-        exhibitions.setOnClickListener(this);
-        guestLectures.setOnClickListener(this);
-        workshops.setOnClickListener(this);
-        ozone.setOnClickListener(this);
+//        schoolEvents.setOnClickListener(this);
+        //      exhibitions.setOnClickListener(this);
+        //    guestLectures.setOnClickListener(this);
+        //  workshops.setOnClickListener(this);
+        //  ozone.setOnClickListener(this);
 
 
         super.onViewCreated(view, savedInstanceState);
@@ -152,8 +151,8 @@ public class SpecialCategoryFragment extends Fragment implements View.OnClickLis
 
         }
 
-        if (b.containsKey("data")) {
-            Navigation.findNavController(view).navigate(R.id.nav_special_events, b);
-        }
+//        if (b.containsKey("data")) {
+//            Navigation.findNavController(view).navigate(R.id.nav_special_events, b);
+//        }
     }
 }
