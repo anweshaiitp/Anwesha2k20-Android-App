@@ -42,6 +42,7 @@ public class SponsorsAdapter extends RecyclerView.Adapter<SponsorsAdapter.ViewHo
             final info.anwesha.iitp.sponsors.SponsorItem current = sponsorItemList.get(position);
 
             holder.name.setText(current.getName());
+            holder.sponsor_name.setText(current.getSponsor_name());
 
             Glide.with(context)
                     .load(current.getImage())
@@ -75,12 +76,14 @@ public class SponsorsAdapter extends RecyclerView.Adapter<SponsorsAdapter.ViewHo
         View root;
         TextView name;
         ImageView image;
+        TextView sponsor_name;
 
         ViewHolder(@NonNull View itemView) {
             super(itemView);
             name = itemView.findViewById(R.id.name);
             root = itemView.findViewById(R.id.cv_sponsors);
             image = itemView.findViewById(R.id.image);
+            sponsor_name = itemView.findViewById(R.id.sponsor_name);
         }
     }
 

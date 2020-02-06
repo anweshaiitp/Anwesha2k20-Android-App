@@ -78,7 +78,7 @@
         <item
             android:id="@+id/nav_developers"
             android:icon="@drawable/developer_android"
-            android:title="Developers" />
+            android:title="@string/developers" />
 
         <item
             android:id="@+id/option_contact"

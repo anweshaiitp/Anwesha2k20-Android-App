@@ -37,6 +37,8 @@
     <string name="mehuli_pal">Mehuli Pal</string>
     <string name="vs_subhang">VS Subhang</string>
     <string name="img">img</string>
+    <string name="developers">Developers</string>
+    <string name="title_sponsors">Title Sponsors</string>
     <string-array name="days_array">
         <item> None</item>
         <item> Day 1</item>

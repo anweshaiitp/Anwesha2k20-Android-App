@@ -4,16 +4,62 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    app:layoutManager="androidx.recyclerview.widget.GridLayoutManager">
+    android:orientation="vertical">
 
-    <!--    <androidx.recyclerview.widget.RecyclerView-->
-    <!--        android:id="@+id/recycler_sponsors"-->
+    <!--    <androidx.cardview.widget.CardView-->
     <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="match_parent"-->
-    <!--        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"-->
-    <!--        app:spanCount="2"-->
-    <!--        tools:listitem="@layout/card_sponsors">-->
+    <!--        app:cardBackgroundColor="@color/team_page_background"-->
+    <!--        app:cardCornerRadius="8dp"-->
+    <!--        android:layout_margin="8dp"-->
+    <!--        android:layout_height="wrap_content">-->
+
+    <!--     <LinearLayout-->
+    <!--        android:padding="8dp"-->
+    <!--         android:layout_width="match_parent"-->
+    <!--         android:layout_height="wrap_content">-->
+
+
+    <!--         <TextView-->
+    <!--             android:layout_width="match_parent"-->
+    <!--             android:layout_height="wrap_content"-->
+    <!--             android:textColor="@color/team_text"-->
+    <!--             android:textStyle="bold"-->
+    <!--             android:textSize="20sp"-->
+    <!--             android:text="@string/title_sponsors"/>-->
+
+    <!--     </LinearLayout>-->
+    <!--    </androidx.cardview.widget.CardView>-->
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_sponsors"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="1"
+        tools:listitem="@layout/card_sponsors">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <!--           <&#45;&#45; <ImageView-->
+    <!--                android:id="@+id/imageViewEmpty"-->
+    <!--                android:layout_width="200dp"-->
+    <!--                android:layout_height="80dp"-->
+    <!--                android:layout_centerHorizontal="true"-->
+    <!--                android:layout_centerVertical="true"-->
+    <!--                android:layout_gravity="center"-->
+    <!--                android:layout_marginBottom="180dp"-->
+    <!--                app:srcCompat="@drawable/logo" />-->
+
+    <!--            <include-->
+    <!--                android:id="@+id/empty_view"-->
+    <!--                layout="@layout/empty_view"-->
+    <!--                android:visibility="gone" /> -->
+
+
+    <!--    <RelativeLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent">-->
 
     <!--        <ImageView-->
     <!--            android:id="@+id/imageViewEmpty"-->
@@ -21,43 +67,24 @@
     <!--            android:layout_height="80dp"-->
     <!--            android:layout_centerHorizontal="true"-->
     <!--            android:layout_centerVertical="true"-->
+    <!--            android:layout_gravity="center_horizontal"-->
+    <!--            android:background="@drawable/logo"-->
+    <!--            android:foregroundGravity="center_vertical"-->
+    <!--            android:gravity="center_vertical" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/tv_message"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_above="@id/imageViewEmpty"-->
+    <!--            android:layout_centerHorizontal="true"-->
+    <!--            android:layout_centerVertical="true"-->
     <!--            android:layout_gravity="center"-->
-    <!--            android:layout_marginBottom="180dp"-->
-    <!--            app:srcCompat="@drawable/logo" />-->
-
-    <!--        <include-->
-    <!--            android:id="@+id/empty_view"-->
-    <!--            layout="@layout/empty_view"-->
-    <!--            android:visibility="gone" />-->
-    <!--    </androidx.recyclerview.widget.RecyclerView>-->
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <ImageView
-            android:id="@+id/imageViewEmpty"
-            android:layout_width="200dp"
-            android:layout_height="80dp"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:layout_gravity="center_horizontal"
-            android:background="@drawable/logo"
-            android:foregroundGravity="center_vertical"
-            android:gravity="center_vertical" />
-
-        <TextView
-            android:id="@+id/tv_message"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_above="@id/imageViewEmpty"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:layout_gravity="center"
-            android:layout_marginTop="12dp"
-            android:fontFamily="sans-serif-condensed-light"
-            android:gravity="center"
-            android:text="Coming Soon"
-            android:textColor="@color/white"
-            android:textSize="28sp" />
-    </RelativeLayout>
+    <!--            android:layout_marginTop="12dp"-->
+    <!--            android:fontFamily="sans-serif-condensed-light"-->
+    <!--            android:gravity="center"-->
+    <!--            android:text="Coming Soon"-->
+    <!--            android:textColor="@color/white"-->
+    <!--            android:textSize="28sp" />-->
+    <!--    </RelativeLayout>-->
 </LinearLayout>
