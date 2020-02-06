@@ -114,11 +114,11 @@ public class AboutFragment extends Fragment implements View.OnClickListener {
         github9.setOnClickListener(this);
         github10.setOnClickListener(this);
 
-        Glide.with(context).load("https://scontent.fdel29-1.fna.fbcdn.net/v/t1.0-9/61836104_1185350021642288_3218647400700706816_n.jpg?_nc_cat=102&_nc_oc=AQks_Avrh-QmlQFcHGi2ug38TMWNY4xy6qpFT8fxfz451NDS3ahAIUOVwKIbn-O6KmE&_nc_ht=scontent.fdel29-1.fna&oh=ba5d514048981767bdc4b4c909b6708a&oe=5E35BDD7")
+        Glide.with(context).load("http://anwesha.info/gallery/developers/ashwani.jpg")
                 .placeholder(R.mipmap.anwesha_icon_round).into(image1);
 
 
-        Glide.with(context).load("https://avatars2.githubusercontent.com/u/40834245?s=460&v=4")
+        Glide.with(context).load("http://anwesha.info/gallery/developers/amish.jpg")
                 .placeholder(R.mipmap.anwesha_icon_round).into(image2);
 
 
@@ -126,10 +126,10 @@ public class AboutFragment extends Fragment implements View.OnClickListener {
               .placeholder(R.mipmap.anwesha_icon_round).into(image3);
 
 
-        Glide.with(context).load("https://scontent.fpat1-1.fna.fbcdn.net/v/t1.0-9/p960x960/81445064_2210647695907368_5005389852087156736_o.jpg?_nc_cat=102&_nc_ohc=Lph1sLQZf4cAQlaU9t4HrKLfnlufTTAbATMgGozV5_ffd5FqeBI1cr_jg&_nc_ht=scontent.fpat1-1.fna&oh=22884030cdb2cd9d39accd26e6c5307d&oe=5EA9F98C")
+        Glide.with(context).load("http://anwesha.info/gallery/developers/amartya.jpg")
                 .placeholder(R.mipmap.anwesha_icon_round).into(image4);
 
-        Glide.with(context).load("https://scontent.fdel29-1.fna.fbcdn.net/v/t1.0-9/18813995_1182737558521894_2753272857627730485_n.jpg?_nc_cat=101&_nc_oc=AQlG0F8XVl3PnNTA1LnzMcfZ3p4cElt7WOpCtOADvw6N7eQcw-97L2RhxGWq-T2VDGk&_nc_ht=scontent.fdel29-1.fna&oh=70217968ca8de55d0a842ceac8ab8f41&oe=5E3796AA")
+        Glide.with(context).load("http://anwesha.info/gallery/developers/somenath.jpg")
                 .placeholder(R.mipmap.anwesha_icon_round).into(image5);
 
 
