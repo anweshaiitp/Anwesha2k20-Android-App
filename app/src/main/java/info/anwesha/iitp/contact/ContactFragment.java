@@ -49,9 +49,7 @@ public class ContactFragment extends Fragment implements View.OnClickListener {
 
     @Override
     public void onClick(View view) {
-
         int id = view.getId();
-
         switch (id) {
             case R.id.bus_schedule:
                 info.anwesha.iitp.utils.IntentUtils.openWebBrowser(context, "http://anwesha.info/gallery/bus.pdf");
@@ -69,6 +67,5 @@ public class ContactFragment extends Fragment implements View.OnClickListener {
                 IntentUtils.openWebBrowser(context, "https://in.linkedin.com/company/anweshaiitp");
                 break;
         }
-
     }
 }

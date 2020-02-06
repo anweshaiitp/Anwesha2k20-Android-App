@@ -5,16 +5,20 @@ import android.app.SearchManager;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 
 public class IntentUtils {
 
-    public static boolean openWebBrowser(Context context, String url) {
+    public static void  openWebBrowser(Context context, String url) {
         Uri page = Uri.parse(url);
+        if(!CheckNetwork.isNetworkConnected(context)){
+            Toast.makeText(context, "No Internet Connection!!!", Toast.LENGTH_LONG).show();
+        }else{
         Intent intent = new Intent(Intent.ACTION_VIEW, page);
-        return safeOpenIntent(context, intent);
-    }
+         safeOpenIntent(context, intent);
+    }}
 
     public static boolean writeMail(Context context, String subject, String... recipientEmails) {
 
